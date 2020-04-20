@@ -1,0 +1,947 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "TSoC",
+				"abbreviation": "TSoC",
+				"color": "ff9900",
+				"full": "The Sea of Cyranos",
+				"authors": [
+					"Jackalope"
+				],
+				"version": "1.0.0",
+				"url": "https://github.com/TheGiddyLimit/homebrew",
+				"targetSchema": "1.0.0"
+			}
+		],
+		"dateAdded": 0,
+		"dateLastModified": 0
+	},
+	"background": [
+		{
+			"name": "Amazon",
+			"source": "TSoC",
+			"skillProficiencies": [
+				{
+					"athletics": true,
+					"intimidation": true
+				}
+			],
+			"entries": [
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Skill Proficiencies",
+							"entry": "{@skill Athletics}, {@skill Intimidation}"
+						},
+						{
+							"type": "item",
+							"name": "Tool Proficiencies",
+							"entry": "One type of {@item gaming set}"
+						},
+						{
+							"type": "item",
+							"name": "Languages",
+							"entry": "One of your choice"
+						},
+						{
+							"type": "item",
+							"name": "Equipment",
+							"entry": "A ceremonial circlet or diadem (A mark of your ascension to Amazon), a set of {@item common clothes}, and a belt pouch containing 15gp "
+						}
+					]
+				},
+				{
+					"name": "Restriction: Female Only",
+					"type": "entries",
+					"entries": [
+						"Only women can become Amazons, men are exiled or slaughtered once they have fulfilled their purpose."
+					]
+				},
+				{
+					"name": "Feature: Amazon Pride",
+					"type": "entries",
+					"entries": [
+						"Amazons are well revered warriors. Whether you are loved or feared, you find that people are often willing to be more lenient with prices and services.",
+            "Provided you are still welcome with the Amazons, you can expect free lodging and food for you and your companions within Amazon camps, so long as the men don't stay too long."
+					],
+					"data": {
+						"isFeature": true
+					}
+				},
+				{
+					"name": "Reason For Leaving",
+					"type": "entries",
+					"entries": [
+						"You have been separated from your tribe for some reason. You can roll on the table to determine why, or chose one that best fits your character.",
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Reason"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I was sent on a special mission by my queen, one only I could complete."
+								],
+								[
+									"2",
+									"I was captured and later escaped, I am trying to find my tribe again."
+								],
+								[
+									"3",
+									"I was shunned and exiled for refusing to kill/leave my mate/son."
+								],
+								[
+									"4",
+									"The tribe brings back painful memories, I had to leave."
+								],
+								[
+									"5",
+									"I am searching for artefacts and allies to help my tribe."
+								],
+								[
+									"6",
+									"I disagreed with the tribe and decided to go my own way."
+								],
+								[
+									"7",
+									"I am the only surviving member of my tribe, I am searching for other Amazon tribes."
+								],
+								[
+									"8",
+									"I simply wanted to explore the world."
+								]
+							]
+						}
+					]
+					},
+					{
+						"name": "Suggested Characteristics",
+						"type": "entries",
+						"entries": [
+						{
+							"type": "table",
+							"colLabels": [
+								"d8",
+								"Personality Trait"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I speak down to all men as if they are animals."
+								],
+								[
+									"2",
+									"I only know war and wilderness, social etiquette and commerce are alien to me."
+								],
+								[
+									"3",
+									"I am constantly looking for a fight to prove myself to strangers."
+								],
+								[
+									"4",
+									"The sight of people living ordinary lives amuses me for some reason."
+								],
+								[
+									"5",
+									"I am always ready for battle, I don't have time for bathing or looking nice."
+								],
+								[
+									"6",
+									"I don't like subterfuge, I will not lie and hate when others lie."
+								],
+								[
+									"7",
+									"The simplest, most direct method is usually the best."
+								],
+								[
+									"8",
+									"I like to scare companions with stories from my life with the tribe."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Ideal"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I only value strength, I care not for morals or wisdom. (Evil)"
+								],
+								[
+									"2",
+									"I must follow the customs and laws of my tribe, even if I don't like it. (Lawful)"
+								],
+								[
+									"3",
+									"I must use what strength I have to serve the greater good. (Good)"
+								],
+								[
+									"4",
+									"I refuse to follow orders I disapprove of. (Chaotic)"
+								],
+								[
+									"5",
+									"An honourable enemy can always become a good friend. (Neutral)"
+								],
+								[
+									"6",
+									"Ambition, I will be more than just another woman, I will be legendary. (Any)"
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Bond"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I serve my queen, I have no other loyalties."
+								],
+								[
+									"2",
+									"I will serve Ares to my dying breath."
+								],
+								[
+									"3",
+									"My honour is my life."
+								],
+								[
+									"4",
+									"No man shall ever rule me."
+								],
+								[
+									"5",
+									"My tribe is wrong about men, I shall never shun/execute an innocent man."
+								],
+								[
+									"6",
+									"I fight for those who cannot fight for themselves."
+								]
+							]
+						},
+						{
+							"type": "table",
+							"colLabels": [
+								"d6",
+								"Flaw"
+							],
+							"colStyles": [
+								"col-1 text-center",
+								"col-11"
+							],
+							"rows": [
+								[
+									"1",
+									"I have little respect for anyone who is not a proven warrior."
+								],
+								[
+									"2",
+									"To surrender in battle is the greatest shame I can feel."
+								],
+								[
+									"3",
+									"I made a terrible mistake in battle that cost many lives-and I would do anything to keep that mistake secret."
+								],
+								[
+									"4",
+									"My hatred of my enemies is blinding and unreasoning"
+								],
+								[
+									"5",
+									"I obey my queen, even when I disagree with the order."
+								],
+								[
+									"6",
+									"I refuse to follow the laws of the lands beyond my tribe, this constantly gets me in trouble."
+								]
+							]
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"You hail from a famous tribe of warrior women known as the Amazons. Amazons pride themselves on their strength and independence. Men are not permitted among their ranks and are only used for breeding.",
+          "Some tribes have agreements with neighbouring tribes and settlements in which, once a year the strongest men are chosen to mate with the Amazons. Any girls born from this union are raised as Amazons themselves while the boys are sent back to their fathers.",
+          "In more aggressive tribes, men are captured during raids, enslaved and then slaughtered after the deed is done. Any boys resulting from these unions are usually killed or abandoned."
+				]
+			}
+		}
+	],
+	"feat": [
+		{
+			"name": "Daedalian Tinkerer",
+			"source": "TSoC",
+			"prerequisite": [
+				{
+					"other": "{@class Artificer} level 2 or higher"
+				}
+			],
+			"entries": [
+				"You are a talented craftsman, able to create contraptions beyond common understanding, you gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"Your maximum number of Artificer Infusions increases by 1."
+					]
+				}
+			],
+			"ability": [
+				{
+					"int": 1
+				}
+			]
+		},
+		{
+			"name": "Hoplite",
+			"source": "TSoC",
+			"entries": [
+				"You adopt the fighting style of the hoplite, with spear and shield. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When using a {@item spear|phb} in one hand and a shield in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a d6 to a d8. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls with spears.",
+						"When an ally within 5 feet of you is attacked, you can use your reaction to grant them a +2 bonus to AC against the triggering attack."
+					]
+				}
+			]
+		},
+		{
+			"name": "Oceanid Warrior",
+			"source": "TSoC",
+			"entries": [
+				"You learn the art of fighting with tridents and underwater. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature with no swim speed while underwater, you have advantage on the attack roll.",
+						"Your reach with tridents with which you are proficient is increased by 5 feet."
+					]
+				}
+			]
+		},
+		{
+			"name": "Pit Fighter",
+			"source": "TSoC",
+			"entries": [
+				"You have adopted a flashly fighting style that always goes down well with the arena crowds. You gain the following benefits:",
+				{
+					"type": "list",
+					"items": [
+						"When you make an attack roll against a creature, you can use a bonus action to add your charisma modifier to the attack and damage rolls. Once you use this feature, you can't use it again until you finish a short or long rest."
+					]
+				}
+			],
+			"ability": [
+				{
+					"cha": 1
+				}
+			]
+		}
+	],
+	"item": [
+		{
+			"name": "Bident",
+			"source": "TSoC",
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 500,
+			"weight": 4,
+			"dmg1": "1d6",
+			"dmg2": "1d8",
+			"dmgType": "P",
+			"property": [
+				"T",
+				"V"
+			],
+			"range": "20/60"
+		},
+		{
+			"name": "Satyr's Wine",
+			"type": "P",
+			"rarity": "Common",
+			"source": "TSoC",
+			"weight": 0.5,
+			"entries": [
+				"This sweet wine is made by satyrs from forest fruits grown by dryads. When you drink this wine, you must make a DC 10 Constitution saving throw. On a failed save, you become {@condition charmed} by all creatures that you can see of any species and gender you are normally attracted to. You can repeat the saving throw at the end of every hour until you succeed and are no longer {@condition charmed}."
+			]
+		},
+		{
+			"name": "Hourglass of Kronos",
+			"source": "TSoC",
+			"wondrous": true,
+			"rarity": "Rare",
+			"entries": [
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As a reaction, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
+        "If the target is an object it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have the user make a Dexterity check to affect the object.",
+        "If the target is, or is carried by, an unwilling creature, the user must make a DC10 Dexterity save to resist the effects. The creature is unaware of any attempt to freeze it, successful or not. Once a creature has been frozen, they have advantage on any further saves to avoid the effects of the ourglass.",
+        "When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
+			]
+		},
+		{
+			"name": "Water Mage's Trident",
+			"source": "TSoC",
+			"baseItem": "Trident|PHB",
+			"type": "M",
+			"weapon": true,
+			"weaponCategory": "Martial",
+			"rarity": "Uncommon",
+			"reqAttune": true,
+			"weight": 4,
+			"dmg1": "1d6",
+			"dmg2": "1d8",
+			"dmgType": "P",
+			"property": [
+				"T",
+				"V"
+			],
+			"range": "20/60",
+			"entries": [
+				{
+					"type": "entries",
+					"entries": [
+						"This trident can be used as an {@item arcane focus}.",
+						"While attuned to this trident, you know the spell {@spell create or destroy water} and, as an action, you can expend a spell slot of 1st lever or higher to cast it."
+					]
+				}
+			]
+		}
+	],
+	"monster": [
+		{
+			"name": "Warforged Bodyguard",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 30,
+				"formula": "4d8 + 12"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 16,
+			"dex": 12,
+			"con": 16,
+			"int": 12,
+			"wis": 14,
+			"cha": 9,
+			"skill": {
+				"athletics": "+5",
+				"perception": "+4",
+				"survival": "+4"
+			},
+			"passive": 14,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Warforged Resilience",
+					"entries": [
+						"The warforged has advantage on saving throws against being {@condition poisoned} and is immune to disease. Magic can't put it to sleep."
+					]
+				},
+				{
+					"name": "Serve the Master",
+					"entries": [
+						"The warforged knows a humanoid creature as its master. The warforged must protect the master with its life, and must obey the master's every order, unless it directly threatens the life of the master."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The warforged makes two armblade attacks."
+					]
+				},
+				{
+					"name": "Armblade",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) slashing damage."
+					]
+				},
+				{
+					"name": "Javelin",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 30/120 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+					]
+				},
+				{
+					"name": "Protect The Master",
+					"entries": [
+						"When a creature makes an attack roll against the warforged's master and the warforged is able to reach them using their remaining movement, the warforged can use their reaction and their movement to block the incoming attack, taking the hit (or miss) themselves. The warforged's AC is used to determine if the attack hits or misses."
+					]
+				},
+				{
+					"name": "Final Protocol",
+					"entries": [
+						"When all hope is lost, the warforged can perform one final act to hinder their enemies. The warforged can overload their core to explode.",
+            "Each creature in a 30-foot-radius sphere centered on the warforged must make a DC12 Dexterity saving throw. A target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.",
+						"This action kills the warforged and shatters their body into a thousand pieces."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Protection",
+					"entries": [
+						"When an attacker the warforged can see makes an attack roll against a creature within 5 feet of the warforged, the warforged can impose disadvantage on the attack roll."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		}
+	],
+	"race": [
+		{
+			"name": "Dwarf (Thalian)",
+			"source": "TSoC",
+			"size": "M",
+			"speed": {
+				"walk": 25
+			},
+			"ability": [
+				{
+					"str": 1,
+					"con": 2
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Dwarves mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Thalian dwarves tend to be neutral, prefering to dedicate to their craft rather than politics or tradition."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Dwarves stand between 4 and 5 feet tall and average about 150 pounds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common and Dwarvish. When carved or written, Dwarvish appears as rows of horizontal and vertical fletched lines. Dwarves often use clay tablets to tally payments, account for shipments of ore, or send messages. It can be etched on leaves of copper and gold as a prayer to the gods.These metal scrolls are then melted into the bronze of swords or armor, believed to imbue them with the words of the smith."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"Accustomed to life underground, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Thalian Resilience",
+					"type": "entries",
+					"entries": [
+						"You have advantage on saving throws against poison, and you have resistance against poison and fire damage."
+					]
+				},
+				{
+					"name": "Dwarven Combat Training",
+					"type": "entries",
+					"entries": [
+						"You have proficiency with the {@item battleaxe|phb}, {@item handaxe|phb}, {@item light hammer|phb}, and {@item warhammer|phb}."
+					]
+				},
+				{
+					"name": "Tool Proficiency",
+					"type": "entries",
+					"entries": [
+						"You gain proficiency with the artisan's tools of your choice: {@item smith's tools|phb}, {@item brewer's supplies|phb}, or {@item mason's tools|phb}."
+					]
+				},
+				{
+					"name": "Stonecunning",
+					"type": "entries",
+					"entries": [
+						"Whenever you make an Intelligence ({@skill History}) check related to the origin of stonework, such as ancient columns or statues, you are considered proficient in the {@skill History} skill and add double your proficiency bonus to the check instead of your normal proficiency bonus."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"dwarvish": true
+				}
+			]
+		},
+		{
+			"name": "Elf (Thelman)",
+			"source": "TSoC",
+			"size": "M",
+			"speed": {
+				"walk": 30
+			},
+			"ability": [
+				{
+					"dex": 2,
+					"wis": 1
+				}
+			],
+			"entries": [
+				{
+					"name": "Age",
+					"type": "entries",
+					"entries": [
+						"Elves though long lived can age and die like all mortals. They reach adulthood in a century, and can live for over seven hundred years."
+					]
+				},
+				{
+					"name": "Alignment",
+					"type": "entries",
+					"entries": [
+						"Elves are vestiges of a lost age, their civilizations fallen. They are untethered by the laws of humans and are often chaotic."
+					]
+				},
+				{
+					"name": "Size",
+					"type": "entries",
+					"entries": [
+						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
+					]
+				},
+				{
+					"name": "Languages",
+					"type": "entries",
+					"entries": [
+						"You can speak, read, and write Common, Elvish and one other language of your choice."
+					]
+				},
+				{
+					"name": "Darkvision",
+					"type": "entries",
+					"entries": [
+						"Accustomed to ancient ruins and shadowed woods, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"name": "Keen Senses",
+					"type": "entries",
+					"entries": [
+						"You have proficiency in the {@skill Perception} skill."
+					]
+				},
+				{
+					"name": "Fey Ancestry",
+					"type": "entries",
+					"entries": [
+						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep"
+					]
+				},
+				{
+					"name": "Trance",
+					"entries": [
+						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
+						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
+					],
+					"type": "entries"
+				},
+				{
+					"name": "Huntress' Accuracy",
+					"type": "entries",
+					"entries": [
+						"Whenever you make a ranged attack roll and roll a 1 you can reroll the die, but you must use the new roll even if it is another 1."
+					]
+				},
+				{
+					"name": "Elven Weapon Aptitude",
+					"type": "entries",
+					"entries": [
+						"You have proficiency with the {@item javelin|phb}, {@item spear|phb}, {@item spear|phb}, and {@item shortbow|phb|simple bow}."
+					]
+				},
+				{
+					"name": "Fey Stride",
+					"type": "entries",
+					"entries": [
+						"Your base walking speed is increased by 5 feet."
+					]
+				}
+			],
+			"skillProficiencies": [
+				{
+					"perception": true
+				}
+			],
+			"traitTags": [
+				"Skill Proficiency"
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"elvish": true,
+					"other": true
+				}
+			]
+		},
+		{
+			"name": "Fenri (Laelaps)",
+			"source": "TSoC",
+			"ability": [
+				{
+					"dex": 2,
+					"cha": 1
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Fenri (Laelaps) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Fenri (Laelaps) tend to be loyal, good boys and girls, tending towards neutral good alignments. However some rebellious and malicious Fenri do exist."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Fenri (Laelaps) typically stand between 4 and 6 feet tall and weigh between 150 and 200 lbs. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canine Nose",
+					"entries": [
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Furry Fiend",
+					"entries": [
+						"You have advantage on Intimidation checks against Tabaxi."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Bite of Laelaps",
+					"entries": [
+						"When a creature you have grappled attempts to break free, you can use your reaction to sink your teeth into them and gain advantage on the contested roll."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "All Fours.",
+					"entries": [
+						"You can take the dash action as bonus action, when you do so, you run on all fours."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Zeus's loyal companion, Laelaps could catch anything she hunted. However when she tried to hunt the Teumessian fox, who could never be caught, the pair entered an endless chase as it was paradox. Eventually Zeus stepped in, turned both into stone and laid them to rest in the stars.",
+					"Now Laelaps looks over her children who, after some meddling with mischievous gods, had gained the many gifts of humanoid form; opposable thumbs, the power of speech and the ability to walk on two legs.",
+					"Fenri descended from Laelaps come in many breeds and colours."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://cdn.weasyl.com/~pharsalus/submissions/1655385/295abe0f03c513da7c307ec6874a7d68731588bab180820f5486e82d1a39483f/pharsalus-ad-astra.png?download"
+						}
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"choose": true
+				}
+			]
+		},
+		{
+			"name": "Fenri (Anubis)",
+			"source": "TSoC",
+			"ability": [
+				{
+					"str": 2,
+					"cha": 1
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Fenri (Anubis) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Fenri (Anubis) tend to strictly adhere to the laws of nature and gods, tending towards lawful neutral alignments."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Fenri (Anubis) typically stand between 6 and 7 feet tall and weigh between 200 and 240 lbs. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision ",
+					"entries": [
+						"Your connection to the Duat grants you sight in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canine Nose",
+					"entries": [
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell"
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Furry Fiend",
+					"entries": [
+						"You have advantage on Intimidation checks against Tabaxi."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Scales",
+					"entries": [
+						"If you are reduced to 0 hitpoints, you can use your reaction to roll a deathsave.<br> On a save, you can expend one hitdie to regain hitpoints and stay conscious.<br> On a fail, you immediately fail one deathsave.<br> You can use this trait once per long rest."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"In a foreign land bordering Cyranos, a jackal headed god named Anubis is worshipped as he who prepares souls for the afterlife. Like many other gods, Anubis has mortal descendants.<br> Fenri descended from Anubis typically have short hair, dark fur and long thin snouts."
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"choose": true
+				}
+			]
+		}
+	]
+}

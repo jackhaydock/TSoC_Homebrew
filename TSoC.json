@@ -345,7 +345,7 @@
 					"items": [
 						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature with no swim speed while underwater, you have advantage on the attack roll.",
-						"Your reach with tridents with which you are proficient is increased by 5 feet."
+						"Your reach with tridents and bidents with which you are proficient is increased by 5 feet."
 					]
 				}
 			]
@@ -404,7 +404,7 @@
 			"wondrous": true,
 			"rarity": "Rare",
 			"entries": [
-				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As a reaction, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
         "If the target is an object it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have the user make a Dexterity check to affect the object.",
         "If the target is, or is carried by, an unwilling creature, the user must make a DC10 Dexterity save to resist the effects. The creature is unaware of any attempt to freeze it, successful or not. Once a creature has been frozen, they have advantage on any further saves to avoid the effects of the ourglass.",
         "When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."

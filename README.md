@@ -13,4 +13,4 @@ https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/TSoC.json
 
 You should then be able to see "The Sea of Cyranos" in source filters and see things with the "TSoC" label.
 
-*NOTE: you will need to repeat this everytime I update this*
+*NOTE: you will need to repeat this everytime I update this, I recomend deleting the old version before importing again as sometimes it bugs out and you'll get duplicate items*

@@ -344,8 +344,8 @@
 					"type": "list",
 					"items": [
 						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
-						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature with no swim speed while underwater, you have advantage on the attack roll.",
-						"Your reach with tridents and bidents with which you are proficient is increased by 5 feet."
+						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
+						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
 					]
 				}
 			]
@@ -375,6 +375,7 @@
 			"source": "TSoC",
 			"type": "M",
 			"weapon": true,
+			"sword": true,
 			"weaponCategory": "martial",
 			"rarity": "none",
 			"value": 500,
@@ -389,6 +390,23 @@
 			"range": "20/60"
 		},
 		{
+			"name": "Kopis",
+			"source": "TSoC",
+			"type": "M",
+			"weapon": true,
+			"sword": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 25,
+			"weight": 3,
+			"dmg1": "1d6",
+			"dmgType": "S",
+			"property": [
+				"F",
+				"L"
+			]
+		},
+		{
 			"name": "Satyr's Wine",
 			"type": "P",
 			"rarity": "Common",
@@ -400,40 +418,31 @@
 		},
 		{
 			"name": "Hourglass of Kronos",
+			"wondrous": "true",
 			"source": "TSoC",
-			"wondrous": true,
-			"rarity": "Rare",
+			"rarity": "rare",
 			"entries": [
-				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As a reaction, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
         "If the target is an object it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have the user make a Dexterity check to affect the object.",
         "If the target is, or is carried by, an unwilling creature, the user must make a DC10 Dexterity save to resist the effects. The creature is unaware of any attempt to freeze it, successful or not. Once a creature has been frozen, they have advantage on any further saves to avoid the effects of the ourglass.",
         "When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
 			]
 		},
 		{
-			"name": "Water Mage's Trident",
+			"name": "Sandals of the Styx",
+			"wondrous": "true",
+			"rarity": "rare",
 			"source": "TSoC",
-			"baseItem": "Trident|PHB",
-			"type": "M",
-			"weapon": true,
-			"weaponCategory": "Martial",
-			"rarity": "Uncommon",
 			"reqAttune": true,
-			"weight": 4,
-			"dmg1": "1d6",
-			"dmg2": "1d8",
-			"dmgType": "P",
-			"property": [
-				"T",
-				"V"
-			],
-			"range": "20/60",
+			"curse": true,
 			"entries": [
+				"These sandals have supposedly been dipped in the river styx at the border of the underworld and thus grant the wearer the powers of Achilles.",
+				"While wearing these sandals all non-magical weapon attacks against you have disadvantage.",
 				{
 					"type": "entries",
+					"name": "Curse",
 					"entries": [
-						"This trident can be used as an {@item arcane focus}.",
-						"While attuned to this trident, you know the spell {@spell create or destroy water} and, as an action, you can expend a spell slot of 1st lever or higher to cast it."
+						"These sandals are cursed. Attuning to it curses you until you are targeted by a spell such as {@spell remove curse} or a similar effect. While cursed, your attunement to the object cannot be broken, and any successful weapon attacks against you are treated as critical hits."
 					]
 				}
 			]

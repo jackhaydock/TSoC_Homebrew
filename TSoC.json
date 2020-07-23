@@ -300,17 +300,13 @@
 		{
 			"name": "Daedalian Tinkerer",
 			"source": "TSoC",
-			"prerequisite": [
-				{
-					"other": "{@class Artificer} level 2 or higher"
-				}
-			],
 			"entries": [
 				"You are a talented craftsman, able to create contraptions beyond common understanding, you gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"Your maximum number of Artificer Infusions increases by 1."
+						"You learn two artificer infusions from the Artificer Infusions section at the end of the class's description. Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item as per the Infuse Item rules on page 54 of Eberron: Rising from the Last War, however you can infuse one object at a time.",
+						"Alternatively, if you already have at least two levels in the Artificer class, you learn two additional infusions and can infuse one additional item at a time."
 					]
 				}
 			],
@@ -358,7 +354,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you make an attack roll against a creature, you can use a bonus action to add your charisma modifier to the attack and damage rolls. Once you use this feature, you can't use it again until you finish a short or long rest."
+						"When you make an attack roll against a creature, you can use a bonus action to add your charisma modifier to the attack and damage rolls. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest."
 					]
 				}
 			],
@@ -421,11 +417,23 @@
 			"wondrous": "true",
 			"source": "TSoC",
 			"rarity": "rare",
+			"weight": 1,
 			"entries": [
 				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As a reaction, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
         "If the target is an object it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have the user make a Dexterity check to affect the object.",
         "If the target is, or is carried by, an unwilling creature, the user must make a DC10 Dexterity save to resist the effects. The creature is unaware of any attempt to freeze it, successful or not. Once a creature has been frozen, they have advantage on any further saves to avoid the effects of the ourglass.",
         "When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
+			]
+		},
+		{
+			"name": "Orb of Helios and Selene",
+			"wondrous": "true",
+			"source": "TSoC",
+			"rarity": "uncommon",
+			"weight": 3,
+			"entries": [
+				"This tiny glass orb sheds dim light in a 5-foot radius and shows an image of the sun, during the day, or the moon, during the night.",
+				"While holding this orb, you can use an action to read the image and determine whether it is morning, afternoon, evening, or nighttime outside. This property functions only on the Material Plane."
 			]
 		},
 		{
@@ -449,6 +457,357 @@
 		}
 	],
 	"monster": [
+		{
+			"name": "Amazon Huntress",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Studded Leather Armour"
+					]
+				}
+			],
+			"hp": {
+				"average": 70,
+				"formula": ""
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 12,
+			"dex": 18,
+			"con": 16,
+			"int": 11,
+			"wis": 16,
+			"cha": 15,
+			"skill": {
+				"acrobatics": "+6",
+				"perception": "+5",
+				"survival": "+5"
+			},
+			"passive": 17,
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The amazon has advantage on saving throws against being frightened."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A weapon deals one extra die of its damage when the amazon hits with it (included in the attack)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hoplite makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}14 ({@damage 2d8 + 4}) piercing damage."
+					]
+ 				},
+				{
+					"name": "Kopis",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Amazon Warrior",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 18,
+					"from": [
+						"Studded Leather Armour",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"average": 80,
+				"formula": ""
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 18,
+			"dex": 13,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 15,
+			"skill": {
+				"athletics": "+8",
+				"intimidation": "+4"
+			},
+			"passive": 11,
+			"languages": [
+				"Common"
+			],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Brave",
+					"entries": [
+						"The amazon has advantage on saving throws against being frightened."
+					]
+				},
+				{
+					"name": "Brute",
+					"entries": [
+						"A weapon deals one extra die of its damage when the amazon hits with it (included in the attack)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hoplite makes two weapon attacks."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}14 ({@damage 2d8 + 4}) piercing damage."
+					]
+ 				},
+				{
+					"name": "Kopis",
+					"entries": [
+						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Parry",
+					"entries": [
+						"The Amazon Hoplite adds 3 to its AC against one melee attack that would hit it. To do so, the Amazon Hoplite must see the attacker and be wielding a melee weapon."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Mercenary Hoplite",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 17,
+					"from": [
+						"Breastplate",
+						"Shield"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": ""
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 11,
+			"cha": 11,
+			"skill": {
+				"athletics": "+4",
+				"perception": "+2"
+			},
+			"passive": 12,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Formation Tactics",
+					"entries": [
+						"The soldier has advantage on saving throws against being charmed, frightened, grappled, or restrained while it is within 5 feet of at least one ally."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hoplite makes two melee attacks."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 2}) piercing damage, or {@h}7 ({@damage 1d8 + 2}), piercing damage if used with two hands."
+					]
+ 				},
+				{
+					"name": "Kopis",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
+		{
+			"name": "Mercenary Archer",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "humanoid"
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"Padded Armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 22,
+				"formula": ""
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 16,
+			"con": 14,
+			"int": 11,
+			"wis": 13,
+			"cha": 10,
+			"skill": {
+				"acrobatics": "+5",
+				"perception": "+3"
+			},
+			"passive": 15,
+			"languages": [
+				"Common"
+			],
+			"cr": "1",
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The hoplite makes two attacks with its longbow or kopis."
+					]
+				},
+				{
+					"name": "Longbow",
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 150/600 ft., one target. {@h}8 ({@damage 1d8 + 3}) piercing damage."
+					]
+ 				},
+				{
+					"name": "Kopis",
+					"entries": [
+						"{@atk mw,rw} {@hit 4} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"C"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RW",
+				"THW"
+			]
+		},
 		{
 			"name": "Warforged Bodyguard",
 			"source": "TSoC",

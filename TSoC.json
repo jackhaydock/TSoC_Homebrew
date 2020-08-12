@@ -296,6 +296,1037 @@
 			}
 		}
 	],
+	"deity": [
+		{
+			"name": "Chaos",
+			"source": "TSoC",
+			"title": "The Original Entity",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"None"
+			],
+			"pantheon": "Cyranos",
+			"category": "Chaos",
+			"province": "Nothing and Everything",
+			"symbol": "Purple Vortex",
+			"customProperties": {
+				"Sex": "None",
+				"Typical Forms": "None",
+				"Worshipers": "Secret Cultists"
+			},
+			"entries": [
+				"Chaos was the first entity to exist, they are older than the cosmos itself. To worship Chaos is to worship absence and nothingness. Chaos does not grant any boons or rewards for worship."
+			]
+		},
+		{
+			"name": "Erebus",
+			"source": "TSoC",
+			"title": "The Darkness",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"Death"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "Darkness",
+			"symbol": "Black Cirle or Spiral",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Black Mist, Shadow",
+				"Worshipers": "Secret Cultists, Thieves, Assassins"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Nyx",
+			"source": "TSoC",
+			"title": "The Night",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Death"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "Night",
+			"symbol": "Three Phase Moon",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Black Mist, Shadow",
+				"Worshipers": "Thieves, Spies, Assassins"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Aether",
+			"source": "TSoC",
+			"title": "The Heavens",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "The Upper Sky, Celestial Plane",
+			"symbol": "White Sun",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "White Mist",
+				"Worshipers": "Lesser Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hemera",
+			"source": "TSoC",
+			"title": "The Day",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "Day",
+			"symbol": "Yelow Sun",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Yellow Mist",
+				"Worshipers": "Lesser Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Uranus",
+			"source": "TSoC",
+			"title": "The Sky, King of Primordials",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"Tempest"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "The Sky",
+			"symbol": "Uranus",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Air Elemental",
+				"Worshipers": "Secret Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Pontus",
+			"source": "TSoC",
+			"title": "The Sea",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Tempest"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "The Seas and Oceans",
+			"symbol": "Water Serpent",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Water Elemental",
+				"Worshipers": "Secret Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Gaia",
+			"source": "TSoC",
+			"title": "The Ground",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Nature"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "The Ground, Mortal Plane",
+			"symbol": "Pregnant Woman",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Earth Elemental",
+				"Worshipers": "Some Temples, Midwives"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Tartarus",
+			"source": "TSoC",
+			"title": "The Underworld",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"Death"
+			],
+			"pantheon": "Cyranos",
+			"category": "Primordial",
+			"province": "The Underworld, Pit of Tartarus",
+			"symbol": "Bottomless Pit",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Fire Elemental",
+				"Worshipers": "Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Atlas",
+			"source": "TSoC",
+			"title": "The Skybearer Titan",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"War"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Endurance, Holds up the Sky",
+			"symbol": "Hollow Orb",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Goliath",
+				"Worshipers": "Cults, Athletes"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Eos",
+			"source": "TSoC",
+			"title": "The Dawn Titan",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "The Dawn",
+			"symbol": "Sunrise",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Aasimar",
+				"Worshipers": "Some Temples and Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Helios",
+			"source": "TSoC",
+			"title": "The Sun Titan",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "The Sun (former)",
+			"symbol": "Glowing Chariot",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Fire Genasi, Fire Elemental",
+				"Worshipers": "Some Temples and Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hyperion",
+			"source": "TSoC",
+			"title": "The Light Titan",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"domains": [
+				"Knowledge",
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Light",
+			"symbol": "Glowing Chariot",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Fire Genasi, Fire Elemental",
+				"Worshipers": "Some Temples and Cults"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Kronos",
+			"source": "TSoC",
+			"title": "The Time Titan",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"domains": [
+				"Order"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Time, Kings",
+			"symbol": "Golden Scythe",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Aasimar, Currently Incorporeal in the pit of Tartarus",
+				"Worshipers": "Secret Cults, Chronurgy Mages"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Mnemosyne",
+			"source": "TSoC",
+			"title": "The Memory Titan",
+			"alignment": [
+				"N",
+				"N"
+			],
+			"domains": [
+				"Knowledge"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Memory",
+			"symbol": "Oil Lamp",
+			"customProperties": {
+				"Sex": "FeMale",
+				"Typical Forms": "Aasimar",
+				"Worshipers": "Secret Cults, Echantment Mages, Storytellers"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Oceanus",
+			"source": "TSoC",
+			"title": "The Ocean Titan",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Tempest"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Oceans, Father of Oceanids (Tritons)",
+			"symbol": "Crab Claw",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Triton, Water Elemental, Merman, Giant Crab",
+				"Worshipers": "Secret Cults, Tritons, Sailors"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Prometheus",
+			"source": "TSoC",
+			"title": "Father of Humans",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Trickery",
+				"Life",
+				"Forge"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Creator of Humans and, by extension, most other mortal races",
+			"symbol": "Torch",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Human",
+				"Worshipers": "Temples, Human supremacists"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Selene",
+			"source": "TSoC",
+			"title": "The Moon Titan",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Moon (former), Lycanthropy",
+			"symbol": "Crescent Moon",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Aasimar",
+				"Worshipers": "Temples, Lycanthropes"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Themis",
+			"source": "TSoC",
+			"title": "The Order Titan",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"Knowledge",
+				"Order"
+			],
+			"pantheon": "Cyranos",
+			"category": "Titan",
+			"province": "Law and Order",
+			"symbol": "Scales",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Aasimar",
+				"Worshipers": "Paladins, Justicars, Judges"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Aphrodite",
+			"source": "TSoC",
+			"title": "Lady of Beauty",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Love, Beauty",
+			"symbol": "Open Clam",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Elf, Aasimar, Manifestation of viewer's desires",
+				"Worshipers": "Priests, Lovers, Whores, Performers"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Apollo",
+			"source": "TSoC",
+			"title": "Lord of Music",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Knowledge",
+				"Life",
+				"Light"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Music, Lyre, Poetry, Archery, The Sun, Prophecies and Oracles",
+			"symbol": "Lyre",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Elf, Aasimar",
+				"Worshipers": "Bards, Poets, Oracles, Fortune Tellers, Archers, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Ares",
+			"source": "TSoC",
+			"title": "Lord of War",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"War"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "War, Battle, Aggression, Brute Strengh",
+			"symbol": "Spear",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Orc, Dwarf, Bull",
+				"Worshipers": "Warriors, Gladiators, Amazons, Temples, Orcs"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Artemis",
+			"source": "TSoC",
+			"title": "Lady of the Hunt",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Life",
+				"Nature"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "The Moon, Hunting, Maidenhood",
+			"symbol": "Bow",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Elf, Dryad, White Hart",
+				"Worshipers": "Cultists, Hunters, Maidens, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Athena",
+			"source": "TSoC",
+			"title": "Lady of Wisdom",
+			"alignment": [
+				"L",
+				"G"
+			],
+			"domains": [
+				"Knowledge",
+				"War"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Wisdom, Martial Strategy, Politics and Elves",
+			"symbol": "Owl",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Elf, Human, Owl",
+				"Worshipers": "Warriors, Amazons, Generals, Politicians, Scholars, Elves"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Demeter",
+			"source": "TSoC",
+			"title": "Lady of the Harvest",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"domains": [
+				"Life",
+				"Nature"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Harvest, Fertility and Food",
+			"symbol": "Head of Wheat",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Human, Firbolg",
+				"Worshipers": "Farmers, Cooks, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Dionysus",
+			"source": "TSoC",
+			"title": "Lord of Wine",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Life",
+				"Nature"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Wine, Debauchery and Parties",
+			"symbol": "Grape Bunch",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Human, Satyr, Goat",
+				"Worshipers": "Performers, Whore, Hedonists, Innkeepers, Vineyards, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hephaestus",
+			"source": "TSoC",
+			"title": "Lord of the Forge",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"domains": [
+				"Arcana",
+				"Knowledge",
+				"Forge"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Fire, Metalworking, Smithing, Dwarves, Contructs",
+			"symbol": "Anvil",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Dwarf, Fire Genasi, Warforged",
+				"Worshipers": "Smiths, Tinkers, Firewielders, Dwarves, Warforged, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hera",
+			"source": "TSoC",
+			"title": "Lady of Marriage",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Women, Marriage, Family, Punishing Adulterers and Bigamists",
+			"symbol": "Peacock Feather",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Elf, Human",
+				"Worshipers": "Women, Married Couples, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hermes",
+			"source": "TSoC",
+			"title": "Lord of Messengers",
+			"alignment": [
+				"C",
+				"G"
+			],
+			"domains": [
+				"Life",
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "Thieves, Messengers, Travellers, Shepherds, Medicine, Psychopomp for Great Heroes",
+			"symbol": "Caduceus",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Human",
+				"Worshipers": "Thieves, Messengers, Travellers, Shepherds, Physicians, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Poseidon",
+			"source": "TSoC",
+			"title": "Lord of the Sea",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Tempest"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "The Sea, Horses",
+			"symbol": "Trident",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Water Genasi, Triton, Merman, Hippocampus",
+				"Worshipers": "Sailors, Pirates, Fishermen, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Zeus",
+			"source": "TSoC",
+			"title": "Lord of the Sky",
+			"alignment": [
+				"N",
+				"N"
+			],
+			"domains": [
+				"Arcana",
+				"Tempest"
+			],
+			"pantheon": "Cyranos",
+			"category": "Olympian",
+			"province": "King of Olympians, The Sky, Lighting, Xenia, Kings",
+			"symbol": "Lightning Bolts",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Human, Air Genasi, Eagle",
+				"Worshipers": "Kings, Sailors, Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hades",
+			"source": "TSoC",
+			"title": "King of the Underworld",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"Death",
+				"Grave"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Underworld, Dead Souls, Infernal Beings",
+			"symbol": "Black Ram",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Grey Tiefling, Skeleton",
+				"Worshipers": "Undertakers, Graveyard Keepers, Necromancers, Temples, Cultists, Assassins"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hecate",
+			"source": "TSoC",
+			"title": "Mistress of Magic",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Arcana",
+				"Knowledge",
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Magic",
+			"symbol": "Twin Moons",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Elf, Green Tiefling",
+				"Worshipers": "Mages, Scholars of Magic, Some Temples"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Hestia",
+			"source": "TSoC",
+			"title": "The Hearthkeeper",
+			"alignment": [
+				"N",
+				"G"
+			],
+			"domains": [
+				"Life"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "The Hearth, Home",
+			"symbol": "Flame",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Halfling",
+				"Worshipers": "Housekeepers, Servants"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Nike",
+			"source": "TSoC",
+			"title": "The Victor",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"War"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Victory",
+			"symbol": "Feather and Sword",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Human",
+				"Worshipers": "Athletes, Warriors"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Tyche",
+			"source": "TSoC",
+			"title": "The Fortune Controller",
+			"alignment": [
+				"N",
+				"N"
+			],
+			"domains": [
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Fortune and Destiny",
+			"symbol": "Pentagram",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Human",
+				"Worshipers": "Politicians"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Pan",
+			"source": "TSoC",
+			"title": "The Wild One",
+			"alignment": [
+				"C",
+				"N"
+			],
+			"domains": [
+				"Life",
+				"Nature"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Wilderness, Panic, Animals, Satyrs",
+			"symbol": "Panflute",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Satyr",
+				"Worshipers": "Satyrs, Dryads, Druids"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Thanatos",
+			"source": "TSoC",
+			"title": "The Soul Guide",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"Death",
+				"Grave"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Personification of Death, Psychopomp for dead souls",
+			"symbol": "Black Feather",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Black Winged Aasimar",
+				"Worshipers": "Assassins, Executioners, Undertakers, Graveyardkeepers, Judges"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Nemesis",
+			"source": "TSoC",
+			"title": "The Vengeful",
+			"alignment": [
+				"L",
+				"E"
+			],
+			"domains": [
+				"Death",
+				"Grave",
+				"Order"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Revenge, Divine Retributuion, Punishment",
+			"symbol": "Sword and Hourglass",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Aasimar, Representation of Viewer's Sins",
+				"Worshipers": "Vilgilantes, Judges, Justicars"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Dolos",
+			"source": "TSoC",
+			"title": "The Liar",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Trickery, Guile, Lying",
+			"symbol": "Clay Statue",
+			"customProperties": {
+				"Sex": "Male",
+				"Typical Forms": "Human",
+				"Worshipers": "Con Artists, Tricksters"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Apate",
+			"source": "TSoC",
+			"title": "The Fraudster",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"domains": [
+				"Trickery"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Trickery, Fraud, Deception",
+			"symbol": "Girdle",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Human",
+				"Worshipers": "Con Artists, Fraudsters"
+			},
+			"entries": [
+				""
+			]
+		},
+		{
+			"name": "Alethiea",
+			"source": "TSoC",
+			"title": "The Honest",
+			"alignment": [
+				"L",
+				"N"
+			],
+			"domains": [
+				"Order"
+			],
+			"pantheon": "Cyranos",
+			"category": "Lesser Gods",
+			"province": "Honesty and Truth",
+			"symbol": "Book",
+			"customProperties": {
+				"Sex": "Female",
+				"Typical Forms": "Aasimar",
+				"Worshipers": "Historians, Scholars"
+			},
+			"entries": [
+				""
+			]
+		}
+	],
 	"feat": [
 		{
 			"name": "Daedalian Tinkerer",
@@ -335,13 +1366,13 @@
 			"name": "Oceanid Warrior",
 			"source": "TSoC",
 			"entries": [
-				"You learn the art of fighting with tridents and underwater. You gain the following benefits:",
+				"You learn the fighting style of the Oceanids. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
-						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
-						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
+						"When you wield a {@item trident|phb}, {@item bident|tsoc} or {@item spear|phb}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When you make a melee attack with a {@item trident|phb}, {@item bident|tsoc} or {@item spear|phb} against a creature while either of you are underwater, you have advantage on the attack roll.",
+						"Your reach with {@item trident|phb}s, {@item bident|tsoc}s or {@item spear|phb}s with which you are proficient is increased by 5 feet."
 					]
 				}
 			]

@@ -1533,13 +1533,13 @@
 				{
 					"name": "Brave",
 					"entries": [
-						"The amazon has advantage on saving throws against being frightened."
+						"The Amazon Huntress has advantage on saving throws against being frightened."
 					]
 				},
 				{
 					"name": "Brute",
 					"entries": [
-						"A weapon deals one extra die of its damage when the amazon hits with it (included in the attack)."
+						"A weapon deals one extra die of its damage when the Amazon Huntress hits with it (included in the attack)."
 					]
 				}
 			],
@@ -1547,7 +1547,7 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The hoplite makes two weapon attacks."
+						"The Amazon Huntress makes two weapon attacks."
 					]
 				},
 				{
@@ -1624,13 +1624,13 @@
 				{
 					"name": "Brave",
 					"entries": [
-						"The amazon has advantage on saving throws against being frightened."
+						"The Amazon Warrior has advantage on saving throws against being frightened."
 					]
 				},
 				{
 					"name": "Brute",
 					"entries": [
-						"A weapon deals one extra die of its damage when the amazon hits with it (included in the attack)."
+						"A weapon deals one extra die of its damage when the Amazon Warrior hits with it (included in the attack)."
 					]
 				}
 			],
@@ -1638,19 +1638,25 @@
 				{
 					"name": "Multiattack",
 					"entries": [
-						"The hoplite makes two weapon attacks."
+						"The Amazon Warrior makes two weapon attacks."
 					]
 				},
 				{
-					"name": "Longbow",
+					"name": "Spear",
 					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 150/600 ft., one target. {@h}14 ({@damage 2d8 + 4}) piercing damage."
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. and range 20/60 ft., one target. {@h}11 ({@damage 2d6 + 4}) piercing damage, or {@h}13 ({@damage 2d8 + 4}) piercing damage if used with two hands to makes a melee attack."
+					]
+ 				},
+				{
+					"name": "Shield Bash",
+					"entries": [
+						"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}9 ({@damage 2d4 + 4}) bludgeoning damage. If the target is Medium or smaller creature, it must succeed on a DC 15 Strength saving throw or be knocked prone."
 					]
  				},
 				{
 					"name": "Kopis",
 					"entries": [
-						"{@atk mw,rw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}12 ({@damage 2d6 + 4}) slashing damage."
 					]
 				}
 			],
@@ -1658,7 +1664,7 @@
 				{
 					"name": "Parry",
 					"entries": [
-						"The Amazon Hoplite adds 3 to its AC against one melee attack that would hit it. To do so, the Amazon Hoplite must see the attacker and be wielding a melee weapon."
+						"The Amazon Warrior adds 3 to its AC against one melee attack that would hit it. To do so, the Amazon Hoplite must see the attacker and be wielding a melee weapon."
 					]
 				}
 			],
@@ -1929,7 +1935,7 @@
 					"name": "Final Protocol",
 					"entries": [
 						"When all hope is lost, the warforged can perform one final act to hinder their enemies. The warforged can overload their core to explode.",
-            "Each creature in a 30-foot-radius sphere centered on the warforged must make a DC12 Dexterity saving throw. A target takes 10d6 lightning damage on a failed save, or half as much damage on a successful one.",
+            "Each creature in a 20-foot-radius sphere centered on the warforged must make a DC12 Dexterity saving throw. A target takes 8d6 lightning damage on a failed save, or half as much damage on a successful one.",
 						"This action kills the warforged and shatters their body into a thousand pieces."
 					]
 				}
@@ -2203,9 +2209,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Canine Nose",
+					"name": "Canine Senses",
 					"entries": [
-						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell"
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -2310,9 +2316,9 @@
 				},
 				{
 					"type": "entries",
-					"name": "Canine Nose",
+					"name": "Canine Senses",
 					"entries": [
-						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell"
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
 					]
 				},
 				{
@@ -2335,6 +2341,89 @@
 					"In a foreign land bordering Cyranos, a jackal headed god named Anubis is worshipped as he who prepares souls for the afterlife. Like many other gods, Anubis has mortal descendants.<br> Fenri descended from Anubis typically have short hair, dark fur and long thin snouts."
 				]
 			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"choose": true
+				}
+			]
+		},
+		{
+			"name": "Thalian Cyclops",
+			"source": "TSoC",
+			"ability": [
+				{
+					"con": 2,
+					"str": 1
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Thalian Cyclopes mature at the same rate as humans, but they're considered young until they reach the age of 50. On average, they live about 350 years."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Thalian Cyclopes tend to be neutral, prefering to dedicate to their craft rather than politics or tradition."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Thalian Cyclopes are between 7 and 8 feet tall and weigh between 280 and 340 pounds. Your size is Medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Cyclopian Resilience",
+					"entries": [
+						"You have resistance against fire damage."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Tool Proficiency",
+					"entries": [
+						"You gain proficiency with {@item smith's tools|phb}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": " Poor Depth Perception",
+					"entries": [
+						"You have disadvantage on any attack roll against a target more than 30 feet away."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Powerful Build",
+					"entries": [
+						"You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift."
+					]
+				}
+			],
 			"languageProficiencies": [
 				{
 					"common": true,

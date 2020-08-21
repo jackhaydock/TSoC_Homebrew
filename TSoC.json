@@ -1351,13 +1351,13 @@
 			"name": "Hoplite",
 			"source": "TSoC",
 			"entries": [
-				"You adopt the fighting style of the hoplite, with spear and shield. You gain the following benefits:",
+				"You adopt the fighting style of the hoplite, with {@item spear|phb} and {@item shield|phb}. You gain the following benefits:",
 				{
 					"type": "list",
 					"items": [
-						"When using a {@item spear|phb} in one hand and a shield in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a d6 to a d8. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When using a {@item spear|phb} in one hand and a {@item shield|phb} in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a d6 to a d8. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls with spears.",
-						"When an ally within 5 feet of you is attacked, you can use your reaction to grant them a +2 bonus to AC against the triggering attack."
+						"When an ally within 5 feet of you is attacked, you can use your reaction to grant them a +2 bonus to AC against the triggering attack. You must be wielding a {@item shield|phb} to use this feature."
 					]
 				}
 			]
@@ -1370,9 +1370,9 @@
 				{
 					"type": "list",
 					"items": [
-						"When you wield a {@item trident|phb}, {@item bident|tsoc} or {@item spear|phb}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
-						"When you make a melee attack with a {@item trident|phb}, {@item bident|tsoc} or {@item spear|phb} against a creature while either of you are underwater, you have advantage on the attack roll.",
-						"Your reach with {@item trident|phb}s, {@item bident|tsoc}s or {@item spear|phb}s with which you are proficient is increased by 5 feet."
+						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
+						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
 					]
 				}
 			]
@@ -2161,6 +2161,105 @@
 			]
 		},
 		{
+			"name": "Fenri (Anubis)",
+			"source": "TSoC",
+			"ability": [
+				{
+					"str": 2,
+					"cha": 1
+				}
+			],
+			"size": "M",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Fenri (Anubis) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Fenri (Anubis) tend to strictly adhere to the laws of nature and gods, tending towards lawful neutral alignments."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Fenri (Anubis) typically stand between 6 and 7 feet tall and weigh between 200 and 240 lbs. Your size is medium."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision ",
+					"entries": [
+						"Your connection to the Duat grants you sight in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and one other language of your choice."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Canine Senses",
+					"entries": [
+						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Furry Fiend",
+					"entries": [
+						"You have advantage on Intimidation checks against Tabaxi."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The Scales",
+					"entries": [
+						"If you are reduced to 0 hitpoints, you can use your reaction to roll a deathsave. On a save, you can expend one hitdie to regain hitpoints and stay conscious. On a fail, you immediately fail one deathsave. You can use this trait once per long rest."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"In a foreign land bordering Cyranos, a jackal headed god named Anubis is worshipped as he who prepares souls for the afterlife. Like many other gods, Anubis has mortal descendants.",
+					"Fenri descended from Anubis typically have short hair, dark fur and long thin snouts."
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/Fenri_Anubis.jpg"
+						}
+					}
+				]
+			},
+			"languageProficiencies": [
+				{
+					"common": true,
+					"choose": true
+				}
+			]
+		},
+		{
 			"name": "Fenri (Laelaps)",
 			"source": "TSoC",
 			"ability": [
@@ -2247,98 +2346,9 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://cdn.weasyl.com/~pharsalus/submissions/1655385/295abe0f03c513da7c307ec6874a7d68731588bab180820f5486e82d1a39483f/pharsalus-ad-astra.png?download"
+							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/Fenri_Laelaps.png"
 						}
 					}
-				]
-			},
-			"languageProficiencies": [
-				{
-					"common": true,
-					"choose": true
-				}
-			]
-		},
-		{
-			"name": "Fenri (Anubis)",
-			"source": "TSoC",
-			"ability": [
-				{
-					"str": 2,
-					"cha": 1
-				}
-			],
-			"size": "M",
-			"speed": 30,
-			"darkvision": 60,
-			"entries": [
-				{
-					"type": "entries",
-					"name": "Age",
-					"entries": [
-						"Fenri (Anubis) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Alignment",
-					"entries": [
-						"Fenri (Anubis) tend to strictly adhere to the laws of nature and gods, tending towards lawful neutral alignments."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Size",
-					"entries": [
-						"Fenri (Anubis) typically stand between 6 and 7 feet tall and weigh between 200 and 240 lbs. Your size is medium."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Speed",
-					"entries": [
-						"Your base walking speed is 30 feet."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Darkvision ",
-					"entries": [
-						"Your connection to the Duat grants you sight in darkness. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern colour in darkness, only shades of gray."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Languages",
-					"entries": [
-						"You can speak, read, and write Common and one other language of your choice."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Canine Senses",
-					"entries": [
-						"You have advantage on Wisdom (Perception) checks that rely on hearing or smell."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Furry Fiend",
-					"entries": [
-						"You have advantage on Intimidation checks against Tabaxi."
-					]
-				},
-				{
-					"type": "entries",
-					"name": "The Scales",
-					"entries": [
-						"If you are reduced to 0 hitpoints, you can use your reaction to roll a deathsave.<br> On a save, you can expend one hitdie to regain hitpoints and stay conscious.<br> On a fail, you immediately fail one deathsave.<br> You can use this trait once per long rest."
-					]
-				}
-			],
-			"fluff": {
-				"entries": [
-					"In a foreign land bordering Cyranos, a jackal headed god named Anubis is worshipped as he who prepares souls for the afterlife. Like many other gods, Anubis has mortal descendants.<br> Fenri descended from Anubis typically have short hair, dark fur and long thin snouts."
 				]
 			},
 			"languageProficiencies": [
@@ -2397,7 +2407,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Cyclopian Resilience",
+					"name": "Thalian Resilience",
 					"entries": [
 						"You have resistance against fire damage."
 					]

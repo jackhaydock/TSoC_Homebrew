@@ -1534,6 +1534,17 @@
 			]
 		},
 		{
+			"name": "Nemean Lion Pelt",
+			"wondrous": "true",
+			"rarity": "rare",
+			"source": "TSoC",
+			"reqAttune": true,
+			"entries": [
+				"You have resistance to non-magical piercing and slashing damage while wearing this pelt.",
+				"This pelt cannot be worn over medium or heavy armor."
+			]
+		},
+		{
 			"name": "Spear of Kelphalos",
 			"weight": 3,
 			"source": "TSoC",

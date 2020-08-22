@@ -697,7 +697,7 @@
 			],
 			"pantheon": "Cyranos",
 			"category": "Titan",
-			"province": "Creator of Humans and, by extension, most other mortal races",
+			"province": "Creator of Humans, Dwarves, Elves and Orcs",
 			"symbol": "Torch",
 			"customProperties": {
 				"Sex": "Male",
@@ -1355,7 +1355,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When using a {@item spear|phb} in one hand and a {@item shield|phb} in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a d6 to a d8. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When using a {@item spear|phb} in one hand and a {@item shield|phb} in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a {@dice d6) to a {@dice d8}. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls with spears.",
 						"When an ally within 5 feet of you is attacked, you can use your reaction to grant them a +2 bonus to AC against the triggering attack. You must be wielding a {@item shield|phb} to use this feature."
 					]
@@ -1370,7 +1370,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a d6 to a d8 when wielded in one hand, and from a d8 to a d10 when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a {@dice d6) to a {@dice d8} when wielded in one hand, and from a {@dice d8) to a {@dice d10} when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
 						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
 					]
@@ -1402,7 +1402,7 @@
 			"source": "TSoC",
 			"type": "M",
 			"weapon": true,
-			"sword": true,
+			"sword": false,
 			"weaponCategory": "martial",
 			"rarity": "none",
 			"value": 500,
@@ -1424,7 +1424,7 @@
 			"sword": true,
 			"weaponCategory": "martial",
 			"rarity": "none",
-			"value": 25,
+			"value": 250,
 			"weight": 3,
 			"dmg1": "1d6",
 			"dmgType": "S",
@@ -1450,10 +1450,12 @@
 			"rarity": "rare",
 			"weight": 1,
 			"entries": [
-				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As a reaction, it can be turned scythe side up to freeze a single non-magical object or creature, that you can see, in time. When the sand runs out, or the glass is turned scythe side down, the target unfreezes and continues as normal, until then the target is completely motionless and unaffected by any external forces or effects.",
-        "If the target is an object it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have the user make a Dexterity check to affect the object.",
-        "If the target is, or is carried by, an unwilling creature, the user must make a DC10 Dexterity save to resist the effects. The creature is unaware of any attempt to freeze it, successful or not. Once a creature has been frozen, they have advantage on any further saves to avoid the effects of the ourglass.",
-        "When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, you can turn the hourglass scythe side up to freeze a creature or object, that you can see within 120ft, in time.",
+				"If the target is an object that isn't being worn or carried, it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have you make a Dexterity check to affect the object.",
+				"If the target is a creature, or an object that is being worn or carried, the creature must be Large or smaller. The creature can make a DC12 Dexterity saving throw to avoid the effects.",
+				"When a creature or object is successfully frozen, it becomes motionless and {@condition incapacitated|phb}. It cannot be effected by any attacks, spells or other effects until the effect ends.",
+				"When the hourglass runs out of sand or is turned scythe side down as an action, the effect ends and the creature or object resumes as normal. A creature is initially unaware of any attempt to freeze it even if passed the save but may determine what happend from context clues.",
+				"When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
 			]
 		},
 		{
@@ -1485,6 +1487,73 @@
 					]
 				}
 			]
+		},
+		{
+			"name": "Bellerophon's Horn",
+			"wondrous": "true",
+			"rarity": "rare",
+			"source": "TSoC",
+			"reqAttune": true,
+			"entries": [
+				"Once attuned to the horn you can blow it to summon a {@creature pegasus|phb}.",
+				"The pegasus is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the pegasus defends itself but takes no other actions.",
+				"When the pegasus drops to 0 hit points, it disappears in a cloud of mist, leaving behind no physical form, and cannot be summoned again until dawn the next day. You can also dismiss the pegasus at any time as an action, causing it to disappear in the same way."
+			]
+		},
+		{
+			"name": "Sandals of Atalanta",
+			"wondrous": "true",
+			"rarity": "uncommon",
+			"source": "TSoC",
+			"reqAttune": true,
+			"entries": [
+				"While you are attuned to and wearing these sandals your walking speed increases by 10ft."
+			]
+		},
+		{
+			"name": "Wings of Daedalus",
+			"wondrous": "true",
+			"rarity": "rare",
+			"source": "TSoC",
+			"reqAttune": true,
+			"entries": [
+				"While you are attuned to and wearing these wings you gain a flying speed of 30ft.",
+				"These wings require both arms to operate and so you cannot use your arms or hands whilst flying or hovering. Whilst on the ground, you can remove your arms from the contraption and use them normally while the wings hang uselessly off your back."
+			]
+		},
+		{
+			"name": "Helm of Darkness",
+			"wondrous": "true",
+			"rarity": "rare",
+			"source": "TSoC",
+			"reqAttune": true,
+			"charges": 3,
+			"entries": [
+				"The helm has 3 charges and regains {@dice 1d4-1} charges daily at dawn.",
+				"As an action, you can expend one charge to cast {@spell greater invisibility|phb} on yourself."
+			]
+		},
+		{
+			"name": "Spear of Kelphalos",
+			"weight": 3,
+			"source": "TSoC",
+			"entries": [
+				"This weapon has 3 charges and regains {@dice 1d4-1} charges daily at dawn. When you miss a thrown attack you can expend one charge to hit instead."
+			],
+			"type": "M",
+			"rarity": "Rare",
+			"reqAttune": true,
+			"weaponCategory": "simple",
+			"property": [
+				"T",
+				"V"
+			],
+			"baseItem": "spear|phb",
+			"range": "20/60",
+			"dmg1": "1d6",
+			"dmg2": "1d8",
+			"dmgType": "P",
+			"charges": 3
 		}
 	],
 	"monster": [
@@ -2440,6 +2509,116 @@
 					"choose": true
 				}
 			]
+		}
+	],
+	"variant": [
+		{
+			"name": "Adamantine Ammunition (TSoC)",
+			"type": "GV",
+			"source": "TSoC",
+			"requires": [
+				{
+					"type": "A"
+				}
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "rare",
+				"source": "TSoC",
+				"namePrefix": "Adamantine ",
+				"nameSuffix": " (TSoC)",
+				"entries": [
+					"You have a +1 bonus to attack and damage rolls made with this ammunition, unless it is magic ammunition that already has a bonus to those rolls.",
+					"Ammunition made of or coated with adamantine is unusually effective when used to break objects. Whenever an adamantine ammunition hits an object, the hit is a critical hit.",
+					"The adamantine version of twenty pieces of ammunition costs 750 gp more than the normal version and takes at least one workweek to make, whether the ammunition is made of the metal or coated with it. Adamantine ammunition can only be made at The Forge on Thalia."
+				],
+				"bonusWeapon": "+1"
+			}
+		},
+		{
+			"name": "Adamantine Armor (TSoC)",
+			"type": "GV",
+			"source": "TSoC",
+			"requires": [
+				{
+					"type": "HA"
+				},
+				{
+					"type": "MA"
+				}
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "rare",
+				"source": "TSoC",
+				"namePrefix": "Adamantine ",
+				"nameSuffix": " (TSoC)",
+				"entries": [
+					"You gain a +1 bonus to AC while you wear this armor, unless it is magic armor that already has a bonus to AC.",
+					"This suit of armor is reinforced with adamantine, one of the hardest substances in existence. While you're wearing it, any critical hit against you becomes a normal hit.",
+					"The adamantine version of a set of armor costs 750 gp more than the normal version and takes at least one workweek to make, whether the armor is made of the metal or coated with it. Adamantine armor can only be made at The Forge on Thalia."
+				],
+				"bonusAc": "+1"
+			}
+		},
+		{
+			"name": "Adamantine Weapon (TSoC)",
+			"type": "GV",
+			"source": "TSoC",
+			"requires": [
+				{
+					"type": "M",
+					"dmgType": "P"
+				},
+				{
+					"type": "M",
+					"dmgType": "S"
+				},
+				{
+					"type": "M",
+					"dmgType": "B"
+				}
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "rare",
+				"source": "TSoC",
+				"namePrefix": "Adamantine ",
+				"nameSuffix": " (TSoC)",
+				"entries": [
+					"You have a +1 bonus to attack and damage rolls made with this weapon, unless it is a magic weapon that already has a bonus to those rolls.",
+					"Melee weapons made of or coated with adamantine are unusually effective when used to break objects. Whenever an adamantine weapon hits an object, the hit is a critical hit.",
+					"The adamantine version of a melee weapon costs 750 gp more than the normal version and takes at least one workweek to make, whether the weapon is made of the metal or coated with it. Adamantine weapons can only be made at The Forge on Thalia."
+				],
+				"bonusWeapon": "+1"
+			}
+		},
+		{
+			"name": "Underworld Weapon",
+			"type": "GV",
+			"source": "TSoC",
+			"requires": [
+				{
+					"type": "M",
+					"dmgType": "P"
+				},
+				{
+					"type": "M",
+					"dmgType": "S"
+				}
+			],
+			"inherits": {
+				"genericBonus": "+1",
+				"rarity": "rare",
+				"source": "TSoC",
+				"namePrefix": "Underworld ",
+				"entries": [
+					"You have a +1 bonus to attack and damage rolls made with this magic weapon.",
+					"This weapon has 3 charges and regains {@dice 1d4-1} charges daily at dawn.",
+					"When you use this weapon to kill a humanoid creature you can expend one charge to cast {@spell animate dead|phb} on that creature."
+				],
+				"bonusWeapon": "+1"
+			}
 		}
 	]
 }

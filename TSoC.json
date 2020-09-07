@@ -1424,7 +1424,7 @@
 			"sword": true,
 			"weaponCategory": "martial",
 			"rarity": "none",
-			"value": 250,
+			"value": 2500,
 			"weight": 3,
 			"dmg1": "1d6",
 			"dmgType": "S",
@@ -1436,7 +1436,8 @@
 		{
 			"name": "Satyr's Wine",
 			"type": "P",
-			"rarity": "Common",
+			"rarity": "none",
+			"value": 1500,
 			"source": "TSoC",
 			"weight": 0.5,
 			"entries": [
@@ -1450,12 +1451,10 @@
 			"rarity": "rare",
 			"weight": 1,
 			"entries": [
-				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, you can turn the hourglass scythe side up to freeze a creature or object, that you can see within 120ft, in time.",
-				"If the target is an object that isn't being worn or carried, it can't be more than 10ft in any dimension. If it is moving quickly the DM may decide to have you make a Dexterity check to affect the object.",
-				"If the target is a creature, or an object that is being worn or carried, the creature must be Large or smaller. The creature can make a DC12 Dexterity saving throw to avoid the effects.",
-				"When a creature or object is successfully frozen, it becomes motionless and {@condition incapacitated|phb}. It cannot be effected by any attacks, spells or other effects until the effect ends.",
-				"When the hourglass runs out of sand or is turned scythe side down as an action, the effect ends and the creature or object resumes as normal. A creature is initially unaware of any attempt to freeze it even if passed the save but may determine what happend from context clues.",
-				"When the hourglass is turned scythe down, all the sand must return to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, you can turn the hourglass scythe side up to target a Large or smaller creature that you can see within 120ft and freeze it in time. If a creature can see you or the hourglass, it can make a DC12 Dexterity saving throw to avoid the effects.",
+				"The creature is frozen in time for up to one minute after which the effect ends. You can end the effect early by turning the hourglass scythe side down as a bonus action. While frozen, the creature is {@condition incapacitated|phb}, can't move or speak, and is unaware of its surroundings. It is also unaffected by any external forces such as gravity, attacks and spells.",
+				"The hourglass can also can also be used to freeze an object that is less than 10ft in any dimension. If the object is carried or worn by a creature that can see you, it can make a DC12 Dexterity saving throw to avoid the effects.",
+				"Once the hourglass has been used the sand must be returned to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
 			]
 		},
 		{
@@ -1549,7 +1548,7 @@
 			"weight": 3,
 			"source": "TSoC",
 			"entries": [
-				"This weapon has 3 charges and regains {@dice 1d4-1} charges daily at dawn. When you miss a thrown attack you can expend one charge to hit instead."
+				"This weapon has 3 charges and regains {@dice 1d4-1} charges daily at dawn. When you miss a thrown attack with this weapon you can expend one charge to hit instead, this hit cannot be a critical hit."
 			],
 			"type": "M",
 			"rarity": "Rare",
@@ -1565,6 +1564,43 @@
 			"dmg2": "1d8",
 			"dmgType": "P",
 			"charges": 3
+		},
+		{
+			"name": "Fire Retardant Ship Coating",
+			"rarity": "none",
+			"value": 25000,
+			"source": "TSoC",
+			"entries": [
+				"This thick, black paint can coat up to 10ft of a ship's hull exterior. Once a ship's hull exterior has been entirely coated, it is no longer vulnerable to fire damage."
+			]
+		},
+		{
+			"name": "Pocket Sand",
+			"rarity": "none",
+			"source": "TSoC",
+			"entries": [
+				"This fine sand or grit can be used to impede the vision of your foes.",
+				"As an action, pocket sand can be thrown at a creature within 10ft of you that has eyes. The creature must make a DC 10 Dexterity saving throw or become {@condition blinded|phb} until the begining of its next turn."
+			]
+		},
+		{
+			"name": "Hippolyta's Girdle",
+			"rarity": "rare",
+			"reqAttune": true,
+			"source": "TSoC",
+			"entries": [
+				"While wearing this belt, your Strength score changes to 21. The item has no effect on you if your Strength without the belt is equal to or greater than the belt's score."
+			]
+		},
+		{
+			"name": "Bolt of Zeus",
+			"rarity": "rare",
+			"source": "TSoC",
+			"entries": [
+				"Crafted by the cyclopes, this crackling, golden bolt holds the power of zeus",
+				"This item has {@dice 3d4} charges when it is found. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"If you expend the bolt's last charge, roll a d20. On a 1, the bolt explodes and deals {@dice 8d6} lightning damage to all creatures within 10ft. If the roll is not a 1, the bolt crumbles into ashes and is destroyed."
+			]
 		}
 	],
 	"monster": [
@@ -2520,6 +2556,883 @@
 					"choose": true
 				}
 			]
+		},
+		{
+			"name": "Kobold",
+			"source": "TSoC",
+			"ability": [
+				{
+					"dex": 2,
+					"con": 1
+				}
+			],
+			"size": "S",
+			"speed": 30,
+			"darkvision": 60,
+			"entries": [
+				{
+					"type": "entries",
+					"name": "Age",
+					"entries": [
+						"Kobolds reach adulthood at age 6 and can live up to 120 years but rarely do so."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Alignment",
+					"entries": [
+						"Kobolds are typically kleptomaniacs, making them choatic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Size",
+					"entries": [
+						"Kobolds are between 2 and 3 feet tall and weigh between 25 and 35 pounds. Your size is Small."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Speed",
+					"entries": [
+						"Your base walking speed is 30 feet."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Languages",
+					"entries": [
+						"You can speak, read, and write Common and Draconic."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Darkvision",
+					"entries": [
+						"You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Grovel, Cower, and Beg",
+					"entries": [
+						"As an action on your turn, you can cower pathetically to distract nearby foes. Until the end of your next turn, your allies gain advantage on attack rolls against enemies within 10 feet of you that you can see. Once you use this trait, you can't use it again until you finish a short or long rest."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Pack Tactics",
+					"entries": [
+						"You have advantage on an attack roll against a creature if at least one of your allies is within 5 feet of the creature and the ally isn't {@condition incapacitated|phb}."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Sunlight Sensitivity",
+					"entries": [
+						"You have disadvantage on Wisdom (Perception) checks that rely on sight when you or whatever you are trying to perceive is in direct sunlight."
+					]
+				}
+			],
+			"languageProficiencies": [
+				{
+					"common": true,
+					"draconic": true
+				}
+			]
+		}
+	],
+	"vehicle": [
+		{
+			"name": "Rowboat",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "L",
+			"dimensions": [
+				"10 ft.",
+				"5 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 2,
+			"capPassenger": 2,
+			"capCargo": 0.25,
+			"pace": 3,
+			"str": 11,
+			"dex": 8,
+			"con": 11,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"vulnerable": [
+				"fire"
+			],
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 11,
+				"hp": 50,
+				"dt": 8
+			},
+			"movement": [
+				{
+					"name": "Oars",
+					"isControl": true,
+					"ac": 12,
+					"hp": 25,
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"15 ft.",
+								"Move up to its speed, with one 90-degree turn. Without oars, the rowboat's speed is 0."
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 1
+			},
+			"action": [
+				"On its turn, the rowboat can take the move action below. It can't take this action if it has no crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The rowboat can move using its oars."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Small Ship",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"30 ft.",
+				"10 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 4,
+			"capPassenger": 8,
+			"capCargo": 1,
+			"pace": 4,
+			"str": 16,
+			"dex": 8,
+			"con": 13,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 150,
+				"dt": 10
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 12,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 2 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+						"Small ships typically include a ballista only when they are equipped for combat. If a small ship is equipped with a ballista, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200lbs."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 2,
+				"2": 4
+			},
+			"action": [
+				"On its turn, the small ship can take 2 actions, choosing from the options below. It can take only 1 action if it has fewer than four crew. It can't take these actions if it has fewer than two crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista.",
+							"entry": "If it is equipped with a {@object ballista}, the ship can fire them (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The ship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Medium Ship",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"70 ft.",
+				"20 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 30,
+			"capPassenger": 50,
+			"capCargo": 10,
+			"pace": 4,
+			"str": 18,
+			"dex": 8,
+			"con": 15,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 300,
+				"dt": 15
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 16,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 15 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+						"Ships typically include a ballista only when they are equipped for combat. If a ship is equipped with a ballista, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Dragonsmaw",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"Each creature in a 30-foot long 5-foot wide line must make a DC 14 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried. ",
+						"When a Dragonsmaw is destroyed, it explodes in a ball of fire. Each creature within 10ft of the weapon must make a DC 12 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.",
+						"Ships typically include a Dragonsmaw only when they are equipped for combat. If a ship is equipped with a dragonsmaw, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Mangonels",
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+						"Ships typically include a mangonels only when they are equipped for combat. If a ship is equipped with a mangonel, the maximum number of passengers the ship can carry is reduced by four and the cargo capacity is reduced by 400 lbs."
+					]
+				},
+				{
+					"name": "Naval Ram",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"The ship has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 10,
+				"2": 20,
+				"3": 30
+			},
+			"action": [
+				"On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than thirty crew and only 1 action if it has fewer than twenty. It can't take these actions if it has fewer than ten crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista.",
+							"entry": "If it has at least one installed the ship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Dragonsmaws.",
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonels.",
+							"entry": "If it has at least one installed the ship can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The ship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Large Ship",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"100 ft.",
+				"30 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 80,
+			"capPassenger": 100,
+			"capCargo": 100,
+			"pace": 5,
+			"str": 20,
+			"dex": 6,
+			"con": 20,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 500,
+				"dt": 18
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 16,
+					"hp": 500,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 40 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"45 ft.; 15 ft. while sailing into the wind; 60 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+						"Ships typically include a ballista only when they are equipped for combat. If a ship is equipped with a ballista, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Dragonsmaw",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"Each creature in a 30-foot long 5-foot wide line must make a DC 14 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried. ",
+						"When a Dragonsmaw is destroyed, it explodes in a ball of fire. Each creature within 10ft of the weapon must make a DC 12 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.",
+						"Ships typically include a Dragonsmaw only when they are equipped for combat. If a ship is equipped with a dragonsmaw, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Mangonels",
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+						"Ships typically include a mangonels only when they are equipped for combat. If a ship is equipped with a mangonel, the maximum number of passengers the ship can carry is reduced by four and the cargo capacity is reduced by 400 lbs."
+					]
+				},
+				{
+					"name": "Naval Ram",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"The ship has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 20,
+				"2": 40,
+				"3": 80
+			},
+			"action": [
+				"On its turn, the ship can take 3 actions, choosing from the options below. It can take only 2 actions if it has fewer than eighty crew and only 1 action if it has fewer than forty. It can't take these actions if it has fewer than twenty crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista.",
+							"entry": "If it has at least one installed the ship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Dragonsmaws.",
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonels.",
+							"entry": "If it has at least one installed the ship can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The ship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Flagship",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"120 ft.",
+				"40 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 100,
+			"capPassenger": 200,
+			"capCargo": 200,
+			"pace": 6,
+			"str": 24,
+			"dex": 6,
+			"con": 24,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 16,
+				"hp": 800,
+				"dt": 20
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 18,
+					"hp": 600,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 40 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"50 ft.; 20 ft. while sailing into the wind; 70 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"weapon": [
+				{
+					"name": "Ballista",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 120/480 ft., one target. {@h}16 ({@damage 3d10}) piercing damage.",
+						"Ships typically include a ballista only when they are equipped for combat. If a ship is equipped with a ballista, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Dragonsmaw",
+					"ac": 15,
+					"hp": 50,
+					"entries": [
+						"Each creature in a 30-foot long 5-foot wide line must make a DC 14 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried. ",
+						"When a Dragonsmaw is destroyed, it explodes in a ball of fire. Each creature within 10ft of the weapon must make a DC 12 Dexterity saving throw. A creature takes {@h}20 ({@damage 5d6}) fire damage on a failed save, or half as much damage on a successful one. The fire ignites any flammable objects in the area that aren’t being worn or carried.",
+						"Ships typically include a Dragonsmaw only when they are equipped for combat. If a ship is equipped with a dragonsmaw, the maximum number of passengers the ship can carry is reduced by two and the cargo capacity is reduced by 200 lbs."
+					]
+				},
+				{
+					"name": "Mangonels",
+					"ac": 15,
+					"hp": 100,
+					"entries": [
+						"{@atk rw} {@hit 5} to hit, range 200/800 ft. (can't hit targets within 60 ft. of it), one target. {@h}27 ({@damage 5d10}) bludgeoning damage.",
+						"Ships typically include a mangonels only when they are equipped for combat. If a ship is equipped with a mangonel, the maximum number of passengers the ship can carry is reduced by four and the cargo capacity is reduced by 400 lbs."
+					]
+				},
+				{
+					"name": "Naval Ram",
+					"ac": 20,
+					"hp": 100,
+					"dt": 10,
+					"entries": [
+						"The ship has advantage on all saving throws relating to crashing when it crashes into a creature or an object. Any damage it takes from the crash is applied to the naval ram rather than to the ship. These benefits don't apply if another vessel crashes into the galley."
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 40,
+				"2": 60,
+				"3": 80,
+				"4": 100
+			},
+			"action": [
+				"On its turn, the ship can take 4 actions, choosing from the options below. It can take only 3 actions if it has fewer than one hundred crew, only 2 action if it has fewer than eighty crew and only 1 action if it has fewer than sixty. It can't take these actions if it has fewer than forty crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Fire Ballista.",
+							"entry": "If it has at least one installed the ship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Dragonsmaws.",
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Fire Mangonels.",
+							"entry": "If it has at least one installed the ship can fire its {@object mangonel||mangonels} (DMG, ch. 8)."
+						},
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The ship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Lesboat",
+			"source": "TSoC",
+			"vehicleType": "SHIP",
+			"size": "G",
+			"dimensions": [
+				"25 ft.",
+				"10 ft."
+			],
+			"terrain": [
+				"sea"
+			],
+			"capCrew": 4,
+			"capPassenger": 8,
+			"capCargo": 1,
+			"pace": 4,
+			"str": 16,
+			"dex": 8,
+			"con": 13,
+			"int": 0,
+			"wis": 0,
+			"cha": 0,
+			"immune": [
+				"poison",
+				"psychic"
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"stunned",
+				"unconscious"
+			],
+			"hull": {
+				"ac": 15,
+				"hp": 150,
+				"dt": 10
+			},
+			"control": [
+				{
+					"name": "Helm",
+					"ac": 12,
+					"hp": 50,
+					"entries": [
+						"Move up to the speed of one of its movement components, with one 90-degree turn. If the helm is destroyed, the ship can't turn."
+					]
+				}
+			],
+			"movement": [
+				{
+					"name": "Oars",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 25 damage taken",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"20 ft. (requires at least 2 crew)"
+							]
+						}
+					]
+				},
+				{
+					"name": "Sails",
+					"ac": 12,
+					"hp": 100,
+					"hpNote": "-5 ft. speed per 20 damage taken ",
+					"speed": [
+						{
+							"mode": "water",
+							"entries": [
+								"25 ft.; 15 ft. while sailing into the wind; 35 ft. while sailing with the wind."
+							]
+						}
+					]
+				}
+			],
+			"actionThresholds": {
+				"0": 0,
+				"1": 2,
+				"2": 4
+			},
+			"action": [
+				"On its turn, the small ship can take 2 actions, choosing from the options below. It can take only 1 action if it has fewer than four crew. It can't take these actions if it has fewer than two crew.",
+				{
+					"type": "list",
+					"style": "list-hang-notitle",
+					"items": [
+						{
+							"type": "item",
+							"name": "Move.",
+							"entry": "The ship can use its helm to move with its oars or sails."
+						}
+					]
+				}
+			]
 		}
 	],
 	"variant": [
@@ -2534,7 +3447,7 @@
 			],
 			"inherits": {
 				"genericBonus": "+1",
-				"rarity": "rare",
+				"rarity": "none",
 				"source": "TSoC",
 				"namePrefix": "Adamantine ",
 				"nameSuffix": " (TSoC)",
@@ -2560,7 +3473,7 @@
 			],
 			"inherits": {
 				"genericBonus": "+1",
-				"rarity": "rare",
+				"rarity": "none",
 				"source": "TSoC",
 				"namePrefix": "Adamantine ",
 				"nameSuffix": " (TSoC)",
@@ -2592,7 +3505,7 @@
 			],
 			"inherits": {
 				"genericBonus": "+1",
-				"rarity": "rare",
+				"rarity": "none",
 				"source": "TSoC",
 				"namePrefix": "Adamantine ",
 				"nameSuffix": " (TSoC)",

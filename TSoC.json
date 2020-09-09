@@ -2178,6 +2178,136 @@
 				"RW",
 				"THW"
 			]
+		},
+		{
+			"name": "Warforged Horse",
+			"source": "TSoC",
+			"size": "L",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 25,
+				"formula": "4d10 + 4"
+			},
+			"speed": {
+				"walk": 60
+			},
+			"str": 18,
+			"dex": 12,
+			"con": 18,
+			"int": 2,
+			"wis": 12,
+			"cha": 7,
+			"passive": 11,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"understands Common but can't speak it"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Trampling Charge",
+					"entries": [
+						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked {@condition prone|phb}. If the target is {@condition prone|phb}, the horse can make another attack with its hooves against it as a bonus action."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Hooves",
+					"entries": [
+						"{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) blugeoning damage."
+					]
+				}
+			],
+			"damageTags": [
+				"B"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Warforged Boar",
+			"source": "TSoC",
+			"size": "L",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 42,
+				"formula": "5d10 + 15"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 17,
+			"dex": 10,
+			"con": 18,
+			"int": 2,
+			"wis": 7,
+			"cha": 5,
+			"passive": 11,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"understands Common but can't speak it"
+			],
+			"cr": "2",
+			"trait": [
+				{
+					"name": "Charge",
+					"entries": [
+						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@dice 2d6}) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked {@condition prone|phb}."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Tusk",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 3}) slashing damage."
+					]
+				}
+			],
+			"damageTags": [
+				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
 		}
 	],
 	"race": [
@@ -2441,7 +2571,7 @@
 					"type": "entries",
 					"name": "Furry Fiend",
 					"entries": [
-						"You have advantage on Intimidation checks against Tabaxi."
+						"You have advantage on Intimidation (Charisma) checks against Tabaxi."
 					]
 				},
 				{
@@ -2462,7 +2592,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/Fenri_Anubis.jpg"
+							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/img/Fenri_Anubis.jpg"
 						}
 					}
 				]
@@ -2532,7 +2662,7 @@
 					"type": "entries",
 					"name": "Furry Fiend",
 					"entries": [
-						"You have advantage on Intimidation checks against Tabaxi."
+						"You have advantage on Intimidation (Charisma) checks against Tabaxi."
 					]
 				},
 				{
@@ -2561,7 +2691,7 @@
 						"type": "image",
 						"href": {
 							"type": "external",
-							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/Fenri_Laelaps.png"
+							"url": "https://raw.githubusercontent.com/jackhaydock/TSoC_Homebrew/master/img/Fenri_Laelaps.png"
 						}
 					}
 				]

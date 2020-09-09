@@ -2223,6 +2223,12 @@
 			"cr": "1",
 			"trait": [
 				{
+					"name": "Warforged Resilience",
+					"enteries": [
+						"The warforged has advantage on saving throws against being {@condition poisoned|phb} and is immune to disease. Magic can't put it to sleep."
+					]
+				},
+				{
 					"name": "Trampling Charge",
 					"entries": [
 						"If the horse moves at least 20 feet straight toward a creature and then hits it with a hooves attack on the same turn, that target must succeed on a DC 15 Strength saving throw or be knocked {@condition prone|phb}. If the target is {@condition prone|phb}, the horse can make another attack with its hooves against it as a bonus action."
@@ -2288,6 +2294,12 @@
 			"cr": "2",
 			"trait": [
 				{
+					"name": "Warforged Resilience",
+					"enteries": [
+						"The warforged has advantage on saving throws against being {@condition poisoned|phb} and is immune to disease. Magic can't put it to sleep."
+					]
+				},
+				{
 					"name": "Charge",
 					"entries": [
 						"If the boar moves at least 20 feet straight toward a target and then hits it with a tusk attack on the same turn, the target takes an extra 7 ({@dice 2d6}) slashing damage. If the target is a creature, it must succeed on a DC 13 Strength saving throw or be knocked {@condition prone|phb}."
@@ -2304,6 +2316,71 @@
 			],
 			"damageTags": [
 				"S"
+			],
+			"miscTags": [
+				"MW"
+			]
+		},
+		{
+			"name": "Warforged Dog",
+			"source": "TSoC",
+			"size": "M",
+			"type": {
+				"type": "construct",
+				"tags": [
+					"warforged"
+				]
+			},
+			"alignment": [
+				"A"
+			],
+			"ac": [
+				{
+					"ac": 15,
+					"from": [
+						"natural armor"
+					]
+				}
+			],
+			"hp": {
+				"average": 25,
+				"formula": "4d10 + 4"
+			},
+			"speed": {
+				"walk": 40
+			},
+			"str": 16,
+			"dex": 14,
+			"con": 16,
+			"int": 3,
+			"wis": 12,
+			"cha": 7,
+			"passive": 13,
+			"resist": [
+				"poison"
+			],
+			"languages": [
+				"understands Common but can't speak it"
+			],
+			"cr": "1",
+			"trait": [
+				{
+					"name": "Warforged Resilience",
+					"enteries": [
+						"The warforged has advantage on saving throws against being {@condition poisoned|phb} and is immune to disease. Magic can't put it to sleep."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Bite",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}10 ({@damage 2d6 + 2}) piercing damage. If the target is a creature, it must succeed on a DC 12 Strength saving throw or be knocked {@condition prone|phb}."
+					]
+				}
+			],
+			"damageTags": [
+				"P"
 			],
 			"miscTags": [
 				"MW"

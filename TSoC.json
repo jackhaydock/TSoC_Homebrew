@@ -1336,8 +1336,8 @@
 				{
 					"type": "list",
 					"items": [
-						"You learn two artificer infusions from the Artificer Infusions section at the end of the class's description. Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item as per the Infuse Item rules on page 54 of Eberron: Rising from the Last War, however you can infuse one object at a time.",
-						"Alternatively, if you already have at least two levels in the Artificer class, you learn two additional infusions and can infuse one additional item at a time."
+						"You learn two artificer infusions from the Artificer Infusions section at the end of the class's description. Whenever you finish a long rest, you can touch a nonmagical object and imbue it with one of your artificer infusions, turning it into a magic item as per the Infuse Item rules on page 54 of Eberron: Rising from the Last War, however you can only infuse one object at a time.",
+						"Alternatively, if you already have at least two levels in the Artificer class, you learn two additional infusions of your choice and can infuse one additional item at a time."
 					]
 				}
 			],
@@ -1355,7 +1355,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When using a {@item spear|phb} in one hand and a {@item shield|phb} in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a {@dice d6) to a {@dice d8}. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When using a {@item spear|phb} in one hand and a {@item shield|phb} in the other, the weapon's damage die changes as if you wielded the weapon in two hands, from a {@dice d6} to a {@dice d8}. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"Attacking at long range doesn't impose disadvantage on your thrown weapon attack rolls with spears.",
 						"When an ally within 5 feet of you is attacked, you can use your reaction to grant them a +2 bonus to AC against the triggering attack. You must be wielding a {@item shield|phb} to use this feature."
 					]
@@ -1370,7 +1370,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a {@dice d6) to a {@dice d8} when wielded in one hand, and from a {@dice d8) to a {@dice d10} when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
+						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a {@dice d6} to a {@dice d8} when wielded in one hand, and from a {@dice d8} to a {@dice d10} when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
 						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
 						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
 					]
@@ -1385,7 +1385,7 @@
 				{
 					"type": "list",
 					"items": [
-						"When you make an attack roll against a creature, you can use a bonus action to add your charisma modifier to the attack and damage rolls. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest."
+						"When you make a weapon attack against a creature, you can use your bonus action gain a bonus to the attack and damage rolls equal to your Charisma modifier. You can use this feature a number of times equal to your Charisma modifier (minimum of once). You regain all expended uses when you finish a long rest."
 					]
 				}
 			],
@@ -3143,7 +3143,7 @@
 						{
 							"type": "item",
 							"name": "Fire Ballista.",
-							"entry": "If it is equipped with a {@object ballista}, the ship can fire them (DMG, ch. 8)."
+							"entry": "If it has at least one installed the ship can fire its {@object ballista||ballistas} (DMG, ch. 8)."
 						},
 						{
 							"type": "item",
@@ -3298,7 +3298,7 @@
 						{
 							"type": "item",
 							"name": "Fire Dragonsmaws.",
-							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws"
 						},
 						{
 							"type": "item",
@@ -3458,7 +3458,7 @@
 						{
 							"type": "item",
 							"name": "Fire Dragonsmaws.",
-							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws"
 						},
 						{
 							"type": "item",
@@ -3619,7 +3619,7 @@
 						{
 							"type": "item",
 							"name": "Fire Dragonsmaws.",
-							"entry": "If it has at least one installed the ship can fire its Dragonsmaws (DMG, ch. 8)."
+							"entry": "If it has at least one installed the ship can fire its Dragonsmaws"
 						},
 						{
 							"type": "item",

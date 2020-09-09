@@ -1451,10 +1451,9 @@
 			"rarity": "rare",
 			"weight": 1,
 			"entries": [
-				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side. As an action, you can turn the hourglass scythe side up to target a Large or smaller creature that you can see within 120ft and freeze it in time. If a creature can see you or the hourglass, it can make a DC12 Dexterity saving throw to avoid the effects.",
-				"The creature is frozen in time for up to one minute after which the effect ends. You can end the effect early by turning the hourglass scythe side down as a bonus action. While frozen, the creature is {@condition incapacitated|phb}, can't move or speak, and is unaware of its surroundings. It is also unaffected by any external forces such as gravity, attacks and spells.",
-				"The hourglass can also can also be used to freeze an object that is less than 10ft in any dimension. If the object is carried or worn by a creature that can see you, it can make a DC12 Dexterity saving throw to avoid the effects.",
-				"Once the hourglass has been used the sand must be returned to the scythe side of the glass before it can be used again. For example, if the hourglass is turned scythe side up to freeze an object for 30 seconds it must then be turned scythe down for 30 seconds before it can be used again."
+				"This finely crafted hourglass holds one minute of sand and bears an engraving of a scythe on one side.",
+				"The hourglass has 2 charges and regains {@dice 1d3-1} charges daily at dawn.",
+				"While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell time stasis|TSoC} spell (save DC 12) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend."
 			]
 		},
 		{
@@ -1601,8 +1600,8 @@
 			"source": "TSoC",
 			"entries": [
 				"Crafted by the cyclopes, this crackling, golden bolt holds the power of zeus",
-				"This item has {@dice 3d4} charges when it is found. While holding it, you can use an action to expend 1 or more of its charges to cast the lightning bolt spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
-				"If you expend the bolt's last charge, roll a d20. On a 1, the bolt explodes and deals {@dice 8d6} lightning damage to all creatures within 10ft. If the roll is not a 1, the bolt crumbles into ashes and is destroyed."
+				"This item has {@dice 3d4} charges when it is found. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell lightning bolt|phb} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
+				"If you expend the bolt's last charge roll a d20. On a 1, the bolt explodes and deals {@dice 8d6} lightning damage to all creatures within 10ft. If the roll is not a 1, the bolt crumbles into ashes and is destroyed."
 			]
 		}
 	],
@@ -2949,6 +2948,70 @@
 					"draconic": true
 				}
 			]
+		}
+	],
+	"spell": [
+		{
+			"name": "Time Stasis",
+			"source": "TSoC",
+			"level": 3,
+			"school": "E",
+			"time": [
+				{
+					"number": 1,
+					"unit": "action"
+				}
+			],
+			"range": {
+				"type": "point",
+				"distance": {
+					"type": "feet",
+					"amount": 120
+				}
+			},
+			"components": {
+				"v": true,
+				"s": true,
+				"m": "an hourglass"
+			},
+			"duration": [
+				{
+					"type": "timed",
+					"duration": {
+						"type": "minute",
+						"amount": 1
+					},
+					"concentration": true
+				}
+			],
+			"entries": [
+				"This spell lets you freeze a creature or object in time. Choose a creature, of size Large or smaller, or a non-magical object, that is not greater than 10ft in any dimension, that you can see within range. If the target is a creature or is an object carried or worn by a creature, it must succeed on a Dexterity saving throw or be frozen in time for the spell's duration.",
+				"While frozen, a target is {@condition incapacitated|phb}, can't move or speak, and is unaware of its surroundings. It is also unaffected by any external forces such as gravity, attacks and spells."
+			],
+			"entriesHigherLevel": [
+				{
+					"type": "entries",
+					"name": "At Higher Levels",
+					"entries": [
+						"When you cast this spell using a spell slot of 4th level or higher, you can affect one additional creature or object for each slot level above 3rd."
+					]
+				}
+			],
+			"savingThrow": [
+				"dexterity"
+			],
+			"classes": {
+				"fromClassList": [
+					{
+						"name": "Wizard",
+						"source": "PHB"
+					},
+					{
+						"name": "Artificer",
+						"source": "PHB"
+					}
+				]
+			}
 		}
 	],
 	"vehicle": [

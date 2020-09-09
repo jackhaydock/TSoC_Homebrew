@@ -1577,6 +1577,7 @@
 		{
 			"name": "Pocket Sand",
 			"rarity": "none",
+			"weight": 0.0625,
 			"source": "TSoC",
 			"entries": [
 				"This fine sand or grit can be used to impede the vision of your foes.",
@@ -1585,6 +1586,7 @@
 		},
 		{
 			"name": "Hippolyta's Girdle",
+			"wondrous": "true",
 			"rarity": "rare",
 			"reqAttune": true,
 			"source": "TSoC",
@@ -1594,6 +1596,7 @@
 		},
 		{
 			"name": "Bolt of Zeus",
+			"wondrous": "true",
 			"rarity": "rare",
 			"source": "TSoC",
 			"entries": [

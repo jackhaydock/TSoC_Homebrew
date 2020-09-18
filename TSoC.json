@@ -1603,6 +1603,42 @@
 				"This item has {@dice 3d4} charges when it is found. While holding it, you can use an action to expend 1 or more of its charges to cast the {@spell lightning bolt|phb} spell (save DC 15) from it. For 1 charge, you cast the 3rd-level version of the spell. You can increase the spell slot level by one for each additional charge you expend.",
 				"If you expend the bolt's last charge roll a d20. On a 1, the bolt explodes and deals {@dice 8d6} lightning damage to all creatures within 10ft. If the roll is not a 1, the bolt crumbles into ashes and is destroyed."
 			]
+		},
+		{
+			"name": "Necklace of Beards",
+			"wondrous": "true",
+			"rarity": "common",
+			"source": "TSoC",
+			"entries": [
+				"While wearing this necklace a creature's beard grows by half an inch after each long rest, even if they could not normally grow a beard."
+			]
+		},
+		{
+			"name": "Ring of Theatrics",
+			"wondrous": "true",
+			"rarity": "common",
+			"source": "TSoC",
+			"entries": [
+				"While wearing this ring, you can cast {@spell thaumaturgy|phb} as an action."
+			]
+		},
+		{
+			"name": "Ring of Tricks",
+			"wondrous": "true",
+			"rarity": "common",
+			"source": "TSoC",
+			"entries": [
+				"While wearing this ring, you can cast {@spell prestidigitation|phb} as an action."
+			]
+		},
+		{
+			"name": "Gloves of the Gardener",
+			"wondrous": "true",
+			"rarity": "common",
+			"source": "TSoC",
+			"entries": [
+				"While wearing this ring, you can cast {@spell druidcraft|phb} as an action."
+			]
 		}
 	],
 	"monster": [

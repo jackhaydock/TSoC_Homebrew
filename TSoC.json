@@ -1331,6 +1331,15 @@
 		{
 			"name": "Daedalian Tinkerer",
 			"source": "TSoC",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"int": 13
+						}
+					]
+				}
+			],
 			"entries": [
 				"You are a talented craftsman, able to create contraptions beyond common understanding, you gain the following benefits:",
 				{
@@ -1371,8 +1380,8 @@
 					"type": "list",
 					"items": [
 						"When you wield a {@item trident|phb} or {@item bident|tsoc}, its damage die changes from a {@dice d6} to a {@dice d8} when wielded in one hand, and from a {@dice d8} to a {@dice d10} when wielded with two hands. (This benefit has no effect if another feature has already improved the weapon's die.)",
-						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you have advantage on the attack roll.",
-						"Your reach with {@item trident|phb}s or {@item bident|tsoc}s with which you are proficient is increased by 5 feet."
+						"When you make a melee attack with a {@item trident|phb} or {@item bident|tsoc} against a creature while either of you are underwater, you gain advantage on the attack roll.",
+						"Your reach with {@item trident|phb|tridents} or {@item bident|tsoc|bidents} with which you are proficient is increased by 5 feet."
 					]
 				}
 			]
@@ -1380,6 +1389,15 @@
 		{
 			"name": "Pit Fighter",
 			"source": "TSoC",
+			"prerequisite": [
+				{
+					"ability": [
+						{
+							"cha": 13
+						}
+					]
+				}
+			],
 			"entries": [
 				"You have adopted a flashly fighting style that always goes down well with the arena crowds. You gain the following benefits:",
 				{
@@ -1431,6 +1449,22 @@
 			"property": [
 				"F",
 				"L"
+			]
+		},
+		{
+			"name": "Khopesh",
+			"source": "TSoC",
+			"type": "M",
+			"weapon": true,
+			"sword": true,
+			"weaponCategory": "martial",
+			"rarity": "none",
+			"value": 3000,
+			"weight": 4,
+			"dmg1": "1d8",
+			"dmgType": "S",
+			"property": [
+				"F"
 			]
 		},
 		{
@@ -1495,7 +1529,7 @@
 			"entries": [
 				"Once attuned to the horn you can blow it to summon a {@creature pegasus|phb}.",
 				"The pegasus is friendly to you and your companions. It understands your languages and obeys your spoken commands. If you issue no commands, the pegasus defends itself but takes no other actions.",
-				"When the pegasus drops to 0 hit points, it disappears in a cloud of mist, leaving behind no physical form, and cannot be summoned again until dawn the next day. You can also dismiss the pegasus at any time as an action, causing it to disappear in the same way."
+				"When the pegasus drops to 0 hit points, it disappears in a cloud of mist, leaving behind no physical form, and cannot be summoned again until dawn the next dawn. You can also dismiss the pegasus at any time as an action, causing it to disappear in the same way."
 			]
 		},
 		{
@@ -1957,7 +1991,7 @@
 				}
 			],
 			"hp": {
-				"average": 22,
+				"average": 30,
 				"formula": ""
 			},
 			"speed": {
@@ -2041,7 +2075,7 @@
 				}
 			],
 			"hp": {
-				"average": 22,
+				"average": 28,
 				"formula": ""
 			},
 			"speed": {
@@ -2512,115 +2546,6 @@
 			]
 		},
 		{
-			"name": "Elf (Thelman)",
-			"source": "TSoC",
-			"size": "M",
-			"speed": {
-				"walk": 30
-			},
-			"ability": [
-				{
-					"dex": 2,
-					"wis": 1
-				}
-			],
-			"entries": [
-				{
-					"name": "Age",
-					"type": "entries",
-					"entries": [
-						"Elves though long lived can age and die like all mortals. They reach adulthood in a century, and can live for over seven hundred years."
-					]
-				},
-				{
-					"name": "Alignment",
-					"type": "entries",
-					"entries": [
-						"Elves are vestiges of a lost age, their civilizations fallen. They are untethered by the laws of humans and are often chaotic."
-					]
-				},
-				{
-					"name": "Size",
-					"type": "entries",
-					"entries": [
-						"Elves range from under 5 to over 6 feet tall and have slender builds. Your size is Medium."
-					]
-				},
-				{
-					"name": "Languages",
-					"type": "entries",
-					"entries": [
-						"You can speak, read, and write Common, Elvish and one other language of your choice."
-					]
-				},
-				{
-					"name": "Darkvision",
-					"type": "entries",
-					"entries": [
-						"Accustomed to ancient ruins and shadowed woods, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can't discern color in darkness, only shades of gray."
-					]
-				},
-				{
-					"name": "Keen Senses",
-					"type": "entries",
-					"entries": [
-						"You have proficiency in the {@skill Perception} skill."
-					]
-				},
-				{
-					"name": "Fey Ancestry",
-					"type": "entries",
-					"entries": [
-						"You have advantage on saving throws against being {@condition charmed}, and magic can't put you to sleep"
-					]
-				},
-				{
-					"name": "Trance",
-					"entries": [
-						"Elves don't need to sleep. Instead, they meditate deeply, remaining semiconscious, for 4 hours a day. (The Common word for such meditation is \"trance.\") While meditating, you can dream after a fashion; such dreams are actually mental exercises that have become reflexive through years of practice. After resting in this way, you gain the same benefit that a human does from 8 hours of sleep.",
-						"{@note If you meditate during a long rest, you finish the rest after only 4 hours. You otherwise obey all the rules for a long rest; only the duration is changed.}"
-					],
-					"type": "entries"
-				},
-				{
-					"name": "Huntress' Accuracy",
-					"type": "entries",
-					"entries": [
-						"Whenever you make a ranged attack roll and roll a 1 you can reroll the die, but you must use the new roll even if it is another 1."
-					]
-				},
-				{
-					"name": "Elven Weapon Aptitude",
-					"type": "entries",
-					"entries": [
-						"You have proficiency with the {@item javelin|phb}, {@item spear|phb}, {@item spear|phb}, and {@item shortbow|phb|simple bow}."
-					]
-				},
-				{
-					"name": "Fey Stride",
-					"type": "entries",
-					"entries": [
-						"Your base walking speed is increased by 5 feet."
-					]
-				}
-			],
-			"skillProficiencies": [
-				{
-					"perception": true
-				}
-			],
-			"traitTags": [
-				"Skill Proficiency"
-			],
-			"languageProficiencies": [
-				{
-					"common": true,
-					"elvish": true,
-					"other": true
-				}
-			]
-		},
-		{
 			"name": "Fenri (Anubis)",
 			"source": "TSoC",
 			"ability": [
@@ -2637,7 +2562,7 @@
 					"type": "entries",
 					"name": "Age",
 					"entries": [
-						"Fenri (Anubis) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
+						"Fenri typically mature around 8 years of age. Fenri rarely live beyond 50 years of age."
 					]
 				},
 				{
@@ -2693,7 +2618,7 @@
 					"type": "entries",
 					"name": "The Scales",
 					"entries": [
-						"If you are reduced to 0 hitpoints, you can use your reaction to roll a deathsave. On a save, you can expend one hitdie to regain hitpoints and stay conscious. On a fail, you immediately fail one deathsave. You can use this trait once per long rest."
+						"If you are reduced to 0 hitpoints, you can use your reaction to immediately roll a deathsave. On a success, you can expend one hitdie to regain hitpoints and stay conscious. On a failure, you immediately fail one deathsave. You can use this trait once per long rest."
 					]
 				}
 			],
@@ -2735,7 +2660,7 @@
 					"type": "entries",
 					"name": "Age",
 					"entries": [
-						"Fenri (Laelaps) typically mature around 8 years of age. Fenri (Laelaps) rarely live beyond 50 years of age."
+						"Fenri typically mature around 8 years of age. Fenrirarely live beyond 50 years of age."
 					]
 				},
 				{

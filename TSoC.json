@@ -2543,7 +2543,13 @@
 					"common": true,
 					"dwarvish": true
 				}
-			]
+			],
+			"heightAndWeight": {
+    	"baseHeight": 44,
+    	"heightMod": "2d4",
+    	"baseWeight": 115,
+    	"weightMod": "2d6"
+			}
 		},
 		{
 			"name": "Fenri (Anubis)",
@@ -2642,7 +2648,13 @@
 					"common": true,
 					"choose": true
 				}
-			]
+			],
+			"heightAndWeight": {
+    	"baseHeight": 64,
+    	"heightMod": "2d8",
+    	"baseWeight": 175,
+    	"weightMod": "2d6"
+			}
 		},
 		{
 			"name": "Fenri (Laelaps)",
@@ -2741,7 +2753,13 @@
 					"common": true,
 					"choose": true
 				}
-			]
+			],
+			"heightAndWeight": {
+    	"baseHeight": 54,
+    	"heightMod": "2d8",
+    	"baseWeight": 100,
+    	"weightMod": "1d4"
+			}
 		},
 		{
 			"name": "Thalian Cyclops",
@@ -2806,7 +2824,14 @@
 				},
 				{
 					"type": "entries",
-					"name": " Poor Depth Perception",
+					"name": "Magic Forgemaster",
+					"entries": [
+						"You can cast the {@spell identify|phb} spell as a ritual."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Poor Depth Perception",
 					"entries": [
 						"You have disadvantage on any attack roll against a target more than 30 feet away."
 					]
@@ -2819,12 +2844,23 @@
 					]
 				}
 			],
+			"fluff": {
+				"entries": [
+					"Deep under the mighty volcano of Thalia generations of cyclopes have laboured for thousands of years, producing some of the greatest weapons in the known world, including the thunderbolts of Zeus."
+				]
+			},
 			"languageProficiencies": [
 				{
 					"common": true,
 					"choose": true
 				}
-			]
+			],
+			"heightAndWeight": {
+    	"baseHeight": 74,
+    	"heightMod": "2d10",
+    	"baseWeight": 200,
+    	"weightMod": "2d6"
+			}
 		},
 		{
 			"name": "Kobold",

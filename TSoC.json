@@ -1652,6 +1652,7 @@
 			"wondrous": "true",
 			"rarity": "common",
 			"source": "TSoC",
+			"reqAttune": true,
 			"entries": [
 				"While wearing this ring, you can cast {@spell thaumaturgy|phb} as an action."
 			]
@@ -1661,6 +1662,7 @@
 			"wondrous": "true",
 			"rarity": "common",
 			"source": "TSoC",
+			"reqAttune": true,
 			"entries": [
 				"While wearing this ring, you can cast {@spell prestidigitation|phb} as an action."
 			]
@@ -1670,8 +1672,32 @@
 			"wondrous": "true",
 			"rarity": "common",
 			"source": "TSoC",
+			"reqAttune": true,
 			"entries": [
-				"While wearing this ring, you can cast {@spell druidcraft|phb} as an action."
+				"While wearing these gloves, you can cast {@spell druidcraft|phb} as an action."
+			]
+		},
+		{
+			"name": "Shield Strap",
+			"rarity": "none",
+			"source": "TSoC",
+			"value": 500,
+			"weight": 1,
+			"entries": [
+				"This leather strap can be used to hang a {@item shield|phb} from your shoulder, hanging over your arm and flank, allowing you to keep both hands free while still gaining its usual protection. The shield does limit your mobility however, giving you a -5 penalty to Dexterity checks and saving throws as well as to attack rolls whilst wearing it in this fashion.",
+				"While wearing a shield like this, you can use a bonus action to grab the shield with a free hand and use it as normal."
+			]
+		},
+		{
+			"name": "Buckler",
+			"type": "S",
+			"rarity": "none",
+			"value": 2000,
+			"weight": 4,
+			"ac": 1,
+			"source": "TSoC",
+			"entries": [
+				"This small shield is made from wood or metal and is strapped to the forearm, leaving the hand free. Wielding a buckler increases your Armor Class by 1. You can benefit from only one shield or buckler at a time. You cannot use weapons with the two handed property while wielding this buckler."
 			]
 		}
 	],
